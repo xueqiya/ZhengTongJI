@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/gra">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fx_top_bar_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_back"
+            android:text="返回"
+            android:textColor="@color/gray"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择位置"
+            android:textSize="18dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/gray"/>
+        <TextView
+            android:id="@+id/tv_quxiao"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="确定"
+            android:layout_marginRight="10dp"
+            android:textSize="16dp"
+            android:textColor="@color/accent_blue"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/gra"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/rl_search"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/login_input" >
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:background="@null"
+                android:textColor="#000"
+                android:hint="输入搜索信息"
+                android:paddingLeft="46dp"
+                android:singleLine="true"
+                android:textColorHint="#484c4c"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:padding="2dp"
+                android:layout_centerVertical="true"
+                android:layout_alignLeft="@id/et_search"
+                android:src="@drawable/fx_icon_search_green" />
+        </RelativeLayout>
+        <ListView
+            android:id="@+id/lvAddress"
+            android:background="#fff"
+            android:layout_below="@+id/rl_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+    </RelativeLayout>
+</LinearLayout>

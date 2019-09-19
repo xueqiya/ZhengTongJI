@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_title"
+        android:layout_centerInParent="true"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/icon_gcodingnv"/>
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_centerInParent="true"
+        android:text="张三一"
+        android:textColor="#fff"
+        android:textSize="8dp"
+        android:gravity="center"
+        android:paddingBottom="14dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp" />
+</RelativeLayout>

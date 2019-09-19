@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#f7f7f7" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fx_top_bar_back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:layout_toRightOf="@+id/iv_back"
+            android:textColor="@color/gray"
+            android:text="返回"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:text="咨询"/>
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/wv_webview"
+        android:layout_above="@+id/rl_reddetail"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="match_parent">
+
+    </WebView>
+
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/rl_reddetail"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_midBtn"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:background="@color/blue"
+                android:text="聊天咨询"
+                android:gravity="center"
+                android:textSize="17dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:background="@color/white"
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/tv_midBtn2"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:background="@color/blue"
+                android:text="电话咨询"
+                android:gravity="center"
+                android:textSize="17dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

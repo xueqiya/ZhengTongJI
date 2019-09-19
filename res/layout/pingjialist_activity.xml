@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#f7f7f7" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fx_top_bar_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="他的评价"
+            android:textColor="@color/gray"
+            android:textSize="25dp" />
+        <TextView
+            android:id="@+id/tv_pingjia"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:visibility="invisible"
+            android:gravity="center"
+            android:text="评价"
+            android:textSize="16dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/accent_blue"/>
+        <Button
+            android:id="@+id/btn_tianjia"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:visibility="visible"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/fx_bg_btn_green"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="14dp"
+            android:textColor="#fff"
+            android:text="添加"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="#f7f7f7"
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radiohp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="好  评"
+            android:background="#fff"
+            android:checked="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/em_main_botton_text_color_red"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:button="@null"
+            android:layout_height="match_parent"/>
+
+        <RadioButton
+            android:id="@+id/radiozhP"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="中  评"
+            android:background="#fff"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/em_main_botton_text_color_red"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:button="@null"
+            android:layout_height="match_parent"/>
+
+        <RadioButton
+            android:id="@+id/radiochp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="差  评"
+            android:background="#fff"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/em_main_botton_text_color_red"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:button="@null"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/lv_fuwufankui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

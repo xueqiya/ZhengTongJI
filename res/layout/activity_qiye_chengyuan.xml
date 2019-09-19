@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingBottom="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="#f7f7f7" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fx_top_bar_back" />
+
+        <TextView
+            android:id="@+id/tv_fanhui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@id/iv_back"
+            android:text="返回"
+            android:textColor="@color/gray"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:text="员工列表"
+            android:textColor="#000"
+            android:textSize="18dp" />
+    </RelativeLayout>
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView1"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:onClick="click"
+        android:clickable="true"
+        android:background="#fff"/>
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/refresh_list"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/bmapView1"
+        android:layout_height="match_parent"/>
+</LinearLayout>

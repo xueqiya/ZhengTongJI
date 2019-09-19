@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/group_avatar"
+    android:layout_height="@dimen/group_avatar"
+    android:background="#fff">
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/view_temp"
+        android:layout_width="2dp"
+        android:layout_height="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+    <com.sangu.apptongji.widget.CircleImageView
+        android:id="@+id/iv_avatar1"
+        android:layout_centerHorizontal="true"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:src="@drawable/rp_avatar"/>
+    <com.sangu.apptongji.widget.CircleImageView
+        android:id="@+id/iv_avatar2"
+        android:layout_marginTop="10dp"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:src="@drawable/rp_avatar"/>
+    <com.sangu.apptongji.widget.CircleImageView
+        android:id="@+id/iv_avatar3"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/rp_avatar"/>
+    <com.sangu.apptongji.widget.CircleImageView
+        android:id="@+id/iv_avatar4"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/rp_avatar"/>
+    <com.sangu.apptongji.widget.CircleImageView
+        android:id="@+id/iv_avatar5"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/rp_avatar"/>
+</RelativeLayout>

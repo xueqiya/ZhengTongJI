@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/llImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#f7f7f7">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:onClick="back"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fx_top_bar_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="支持与奖励"
+                android:textColor="@color/gray"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_titleText"
+            android:visibility="visible"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:text="自觉 自愿 有钱一起赚共同求发展"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:textColor="@color/light_grey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:text="支持对自己有帮助或喜欢的功能"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/light_grey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_type1"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/type1"
+                android:layout_width="200dp"
+                android:layout_marginLeft="8dp"
+                android:layout_height="wrap_content"
+                android:text="1、信息奖赏1次"
+                android:textSize="15dp"
+                android:textColor="@color/light_grey"/>
+
+            <Button
+                android:id="@+id/supportBtn1"
+                android:layout_toLeftOf="@+id/shareBtn1"
+                android:text="支持"
+                android:textAlignment="center"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/fx_bg_btn_red"
+                android:layout_width="50dp"
+                android:layout_height="25dp" />
+
+            <Button
+                android:id="@+id/shareBtn1"
+                android:text="分享"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/fx_bg_btn_purple"
+                android:layout_width="50dp"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="2dp"
+                android:layout_alignParentBottom="true"
+                android:text="为我提供了有效信息给予奖赏支持发展"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_type2"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/type2"
+                android:layout_width="200dp"
+                android:layout_marginLeft="8dp"
+                android:layout_height="wrap_content"
+                android:text="2、交易奖赏1次"
+                android:textSize="15dp"
+                android:textColor="@color/light_grey"/>
+
+            <Button
+                android:id="@+id/supportBtn2"
+                android:layout_toLeftOf="@+id/shareBtn2"
+                android:text="支持"
+                android:textAlignment="center"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/fx_bg_btn_red"
+                android:layout_width="50dp"
+                android:layout_height="25dp" />
+
+            <Button
+                android:id="@+id/shareBtn2"
+                android:text="分享"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/fx_bg_btn_purple"
+                android:layout_width="50dp"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="2dp"
+                android:layout_alignParentBottom="true"
+                android:text="通过平台接到了订单赚了钱给予的奖赏"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_type3"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/type3"
+                android:layout_width="200dp"
+                android:layout_marginLeft="8dp"
+                android:layout_height="wrap_content"
+                android:text="3、销售奖赏1次"
+                android:textSize="15dp"
+                android:textColor="@color/light_grey"/>
+
+            <Button
+                android:id="@+id/supportBtn3"
+                android:layout_toLeftOf="@+id/shareBtn3"
+                android:text="支持"
+                android:textAlignment="center"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/fx_bg_btn_red"
+                android:layout_width="50dp"
+                android:layout_height="25dp" />
+
+            <Button
+                android:id="@+id/shareBtn3"
+                android:text="分享"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/fx_bg_btn_purple"
+                android:layout_width="50dp"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="2dp"
+                android:layout_alignParentBottom="true"
+                android:text="通过平台销售了产品给予奖赏支持发展"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_type4"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/type4"
+                android:layout_width="200dp"
+                android:layout_marginLeft="8dp"
+                android:layout_height="wrap_content"
+                android:text="4、电子单据1次"
+                android:textSize="15dp"
+                android:textColor="@color/light_grey"/>
+
+            <Button
+                android:id="@+id/supportBtn4"
+                android:layout_toLeftOf="@+id/shareBtn4"
+                android:text="支持"
+                android:textAlignment="center"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/fx_bg_btn_red"
+                android:layout_width="50dp"
+                android:layout_height="25dp" />
+
+            <Button
+                android:id="@+id/shareBtn4"
+                android:text="分享"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/fx_bg_btn_purple"
+                android:layout_width="50dp"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="2dp"
+                android:layout_alignParentBottom="true"
+                android:text="喜欢此功能并给予支持希望进一步优化"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_type5"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/type5"
+                android:layout_width="200dp"
+                android:layout_marginLeft="8dp"
+                android:layout_height="wrap_content"
+                android:text="5、接单奖赏1次"
+                android:textSize="15dp"
+                android:textColor="@color/light_grey"/>
+
+            <Button
+                android:id="@+id/supportBtn5"
+                android:layout_toLeftOf="@+id/shareBtn5"
+                android:text="支持"
+                android:textAlignment="center"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/fx_bg_btn_red"
+                android:layout_width="50dp"
+                android:layout_height="25dp" />
+
+            <Button
+                android:id="@+id/shareBtn5"
+                android:text="分享"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/fx_bg_btn_purple"
+                android:layout_width="50dp"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="2dp"
+                android:layout_alignParentBottom="true"
+                android:text="喜欢此功能并给予支持希望进一步优化"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_type6"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/type6"
+                android:layout_width="200dp"
+                android:layout_marginLeft="8dp"
+                android:layout_height="wrap_content"
+                android:text="6、名片红包1次"
+                android:textSize="15dp"
+                android:textColor="@color/light_grey"/>
+
+            <Button
+                android:id="@+id/supportBtn6"
+                android:layout_toLeftOf="@+id/shareBtn6"
+                android:text="支持"
+                android:textAlignment="center"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/fx_bg_btn_red"
+                android:layout_width="50dp"
+                android:layout_height="25dp" />
+
+            <Button
+                android:id="@+id/shareBtn6"
+                android:text="分享"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/fx_bg_btn_purple"
+                android:layout_width="50dp"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="2dp"
+                android:layout_alignParentBottom="true"
+                android:text="喜欢此功能并给予支持希望进一步优化"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_type7"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/type7"
+                android:layout_width="200dp"
+                android:layout_marginLeft="8dp"
+                android:layout_height="wrap_content"
+                android:text="7、管理考勤1次"
+                android:textSize="15dp"
+                android:textColor="@color/light_grey"/>
+
+            <Button
+                android:id="@+id/supportBtn7"
+                android:layout_toLeftOf="@+id/shareBtn7"
+                android:text="支持"
+                android:textAlignment="center"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/fx_bg_btn_red"
+                android:layout_width="50dp"
+                android:layout_height="25dp" />
+
+            <Button
+                android:id="@+id/shareBtn7"
+                android:text="分享"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/fx_bg_btn_purple"
+                android:layout_width="50dp"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="2dp"
+                android:layout_alignParentBottom="true"
+                android:text="喜欢此功能并给予支持希望进一步优化"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_type8"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/type8"
+                android:layout_width="200dp"
+                android:layout_marginLeft="8dp"
+                android:layout_height="wrap_content"
+                android:text="8、聊天定位1次"
+                android:textSize="15dp"
+                android:textColor="@color/light_grey"/>
+
+            <Button
+                android:id="@+id/supportBtn8"
+                android:layout_toLeftOf="@+id/shareBtn8"
+                android:text="支持"
+                android:textAlignment="center"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/fx_bg_btn_red"
+                android:layout_width="50dp"
+                android:layout_height="25dp" />
+
+            <Button
+                android:id="@+id/shareBtn8"
+                android:text="分享"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/fx_bg_btn_purple"
+                android:layout_width="50dp"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="2dp"
+                android:layout_alignParentBottom="true"
+                android:text="喜欢此功能并给予支持希望进一步优化"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_type9"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/type9"
+                android:layout_width="200dp"
+                android:layout_marginLeft="8dp"
+                android:layout_height="wrap_content"
+                android:text="9、定制开发1次"
+                android:textSize="15dp"
+                android:textColor="@color/light_grey"/>
+
+            <Button
+                android:id="@+id/supportBtn9"
+                android:layout_toLeftOf="@+id/shareBtn9"
+                android:text="支持"
+                android:textAlignment="center"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/fx_bg_btn_red"
+                android:layout_width="50dp"
+                android:layout_height="25dp" />
+
+            <Button
+                android:id="@+id/shareBtn9"
+                android:text="分享"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/fx_bg_btn_purple"
+                android:layout_width="50dp"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="2dp"
+                android:layout_alignParentBottom="true"
+                android:text="提出新功能开发意见和设想并给予支持"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

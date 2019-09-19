@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="textColor">#FFFFFF</color>
+    <color name="workCircleColor">#00DD00</color>
+    <color name="activityCircleColor">#550088</color>
+    <color name="vacationCircleColor">#AAAAAA</color>
+</resources>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/fx_bg_btn_white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_flow"
+        android:background="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/tv_flow1"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/tv_flow"
+            android:layout_toLeftOf="@+id/tv_flow1"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:text=">>>"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:id="@+id/tv_frist"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_stroke_white"
+            android:textColor="@color/white"
+            android:text="1、沟通报价"
+            android:layout_toLeftOf="@+id/tv_flow"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_second"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_flow"
+            android:background="@drawable/btn_stroke_white"
+            android:textColor="@color/white"
+            android:text="2、等待客户下单"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_alignLeft="@+id/tv_second"
+            android:layout_below="@+id/tv_second"
+            android:background="@drawable/btn_stroke_white"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:text="干不好 客户不签退款"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_alignLeft="@+id/tv_second"
+            android:layout_above="@+id/tv_second"
+            android:background="@drawable/btn_stroke_white"
+            android:textColor="@color/white"
+            android:text="干好后客户签收提钱"
+            android:layout_marginBottom="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textColor="@color/dark_red"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:text="接单提示"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@color/light_grey"
+        android:text="严谨认真，量力而为，信誉第一"
+        android:textSize="17dp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_line1"
+            android:textColor="@color/light_grey"
+            android:text="先沟通 后报价 接到下单 再开工"
+            android:textSize="17dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_alignRight="@+id/tv_line1"
+            android:layout_below="@+id/tv_line1"
+            android:background="@color/dark_red"
+            android:layout_width="123dp"
+            android:layout_height="1dp" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textColor="@color/dark_red"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:text="重要提示"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@color/light_grey"
+        android:text="积极报价，积极处理客户信息"
+        android:textSize="17dp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_line2"
+            android:textColor="@color/light_grey"
+            android:text="无故逃单弃单将冻结关联账户"
+            android:textSize="17dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="35dp"
+            android:layout_alignLeft="@+id/tv_line2"
+            android:layout_below="@+id/tv_line2"
+            android:background="@color/dark_red"
+            android:layout_width="68dp"
+            android:layout_height="1dp" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:textColor="@color/light_grey"
+        android:text="线上流程接单，才能保证结算"
+        android:textSize="17dp"
+        android:textAlignment="center"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_line3"
+            android:textColor="@color/light_grey"
+            android:text="理性竞争要么不接，接之必做"
+            android:textSize="17dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+
+            android:layout_alignLeft="@+id/tv_line3"
+            android:layout_below="@+id/tv_line3"
+            android:background="@color/dark_red"
+            android:layout_width="68dp"
+            android:layout_height="1dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <TextView
+            android:id="@+id/tv_agreen"
+            android:textSize="17dp"
+            android:textColor="@color/dark_red"
+            android:gravity="center"
+            android:text="同意"
+            android:background="@drawable/btn_stroke_red"
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+            android:layout_height="35dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

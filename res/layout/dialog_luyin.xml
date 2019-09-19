@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:layout_gravity="center"
+    >
+    <ImageView
+        android:id="@+id/iv_micphone_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_audio"
+        />
+    <TextView
+        android:id="@+id/tv_audio_time"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="录音"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="离开按钮取消录音"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_alignBottom="@+id/iv_micphone_show"
+        />
+
+</RelativeLayout>

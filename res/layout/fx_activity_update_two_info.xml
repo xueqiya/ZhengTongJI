@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/llImage"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#f7f7f7" >
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:onClick="back"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fx_top_bar_back" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/iv_back"
+                android:text="更改名字"
+                android:textColor="@color/gray"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="42dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@null"
+                android:text="完成"
+                android:textColor="@color/accent_blue"
+                android:textSize="14dp" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/black"/>
+        <TextView
+            android:background="@color/gra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="编辑行业/专业/产品/关键字"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <EditText
+            android:id="@+id/et_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|top"
+            android:minHeight="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:textColor="#353535"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:background="@color/gra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="文字介绍编辑"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/et_info2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:hint="编辑文字介绍"
+            android:minHeight="100dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@null"
+            android:textColor="#353535"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:background="@color/gra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="上传案例图片"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/tv_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:overScrollMode="never" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_xiadanmoshi"
+            android:background="@color/gra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="选择接单模板"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scrollbars="none">
+            <LinearLayout
+                android:background="@color/divider"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rl_moshiyi"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp">
+                    <ImageView
+                        android:id="@+id/iv_moshiyi"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"/>
+                    <CheckBox
+                        android:id="@+id/cb_moshiyi"
+                        android:layout_marginTop="-5dp"
+                        android:layout_marginRight="-5dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_width="wrap_content"
+                        android:checked="true"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_moshier"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+                    <ImageView
+                        android:id="@+id/iv_moshier"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"/>
+                    <CheckBox
+                        android:id="@+id/cb_moshier"
+                        android:layout_marginTop="-5dp"
+                        android:layout_marginRight="-5dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_width="wrap_content"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_moshisan"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <ImageView
+                        android:id="@+id/iv_moshisan"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"/>
+                    <CheckBox
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="-5dp"
+                        android:layout_marginTop="-5dp"
+                        android:id="@+id/cb_moshisan"
+                        android:layout_width="wrap_content"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_moshisi"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <ImageView
+                        android:id="@+id/iv_moshisi"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"/>
+                    <CheckBox
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="-5dp"
+                        android:layout_marginTop="-5dp"
+                        android:id="@+id/cb_moshisi"
+                        android:layout_width="wrap_content"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_moshiwu"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_moshiwu"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"/>
+                    <CheckBox
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="-5dp"
+                        android:layout_marginTop="-5dp"
+                        android:id="@+id/cb_moshiwu"
+                        android:layout_width="wrap_content"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:background="@color/gra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="注: 专业修改需该专业不存在未完成订单，且十天之内不存在交易纠纷问题方可修改专业！请谨慎填写。"
+            android:textColor="@color/accent_red"
+            android:textSize="15dp" />
+    </LinearLayout>
+</ScrollView>

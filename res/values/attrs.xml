@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="fromDegrees" format="float|reference" />
+    <attr name="toDegrees" format="float|reference" />
+    <attr name="childSize" format="dimension|reference" />
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="BarChartView">
+        <attr name="barchartCount" format="integer" />
+        <attr name="barchartDuration" format="integer" />
+        <attr name="barchartShape" format="reference" />
+        <attr name="barchartHeight" format="dimension" />
+        <attr name="barchartWidth" format="dimension" />
+        <attr name="barcharMarginLeft" format="dimension" />
+        <attr name="barcharBackColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="IdentifyingCodeView">
+        <!--输入框的数量-->
+        <attr name="icv_et_number" format="integer" />
+        <!--输入框的宽度-->
+        <attr name="icv_et_width" format="dimension|reference" />
+        <!--输入框之间的分割线-->
+        <attr name="icv_et_divider_drawable" format="reference" />
+        <!--输入框文字颜色-->
+        <attr name="icv_et_text_color" format="color|reference" />
+        <!--输入框文字大小-->
+        <attr name="icv_et_text_size" format="dimension|reference" />
+        <!--输入框获取焦点时边框-->
+        <attr name="icv_et_bg_focus" format="reference" />
+        <!--输入框没有焦点时边框-->
+        <attr name="icv_et_bg_normal" format="reference" />
+    </declare-styleable>
+
+    <!--收起展开textview-->
+    <declare-styleable name="ExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer"/>
+        <attr name="animDuration" format="integer"/>
+        <attr name="showExpandCollapseDrawable" format="boolean" />
+        <attr name="expandDrawable" format="reference"/>
+        <attr name="collapseDrawable" format="reference"/>
+        <attr name="contentTextColor" format="color" />
+        <attr name="collapseExpandTextColor" format="color" />
+        <attr name="contentTextSize" format="dimension" />
+        <attr name="collapseExpandTextSize" format="dimension" />
+        <attr name="textCollapse" format="string" />
+        <attr name="textExpand" format="string" />
+        <attr name="collapseExpandGrarity" >
+            <flag name="left" value="3"/>
+            <flag name="right" value="5"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="MoreTextStyle">
+        <attr name="textSize" format="dimension"/>
+        <attr name="textColor" format="color"/>
+        <attr name="maxLine" format="integer" />
+        <attr name="text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ATDragView">
+        <attr name="seek_bg_color" format="color" />
+        <attr name="seek_pb_color" format="color" />
+        <attr name="seek_ball_solid_color" format="color" />
+        <attr name="seek_ball_stroke_color" format="color" />
+        <attr name="seek_text_color" format="color" />
+        <attr name="seek_text_size" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ArcLayout">
+        <attr name="fromDegrees"/>
+        <attr name="toDegrees"/>
+        <attr name="childSize"/>
+    </declare-styleable>
+
+    <declare-styleable name="ArcMenu">
+        <attr name="fromDegrees"/>
+        <attr name="toDegrees"/>
+        <attr name="childSize"/>
+    </declare-styleable>
+
+    <declare-styleable name="RayLayout">
+        <attr name="leftHolderWidth" format="dimension" />
+    </declare-styleable>
+
+    <attr name="entrySummaries" format="reference" />
+
+    <declare-styleable name="UListPreference">
+        <attr name="entrySummaries" />
+    </declare-styleable>
+
+    <declare-styleable name="CCalendar">
+        <attr name="firstDayOfWeek" format="string"/>
+        <attr name="monthCalendarHeight" format="dimension" />
+        <attr name="calendarTextColor" format="color" />
+        <attr name="workCircleColor" format="color" />
+        <attr name="activityCircleColor" format="color" />
+        <attr name="vacationCircleColor" format="color" />
+        <attr name="calendarTextSize" format="dimension" />
+        <attr name="circleRadius" format="dimension" />
+        <attr name="calendarHeight" format="dimension"/>
+        <attr name="calendarClickable" format="boolean"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="bubble">
+        <attr name="shadowColor" format="color" />
+        <attr name="padding" format="dimension" />
+        <attr name="strokeWidth" format="float" />
+        <attr name="cornerRadius" format="float" />
+        <attr name="halfBaseOfLeg" format="dimension" />
+    </declare-styleable>
+
+</resources>

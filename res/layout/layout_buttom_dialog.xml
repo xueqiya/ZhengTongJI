@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:background="@drawable/tb_munion_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="请选择"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <RelativeLayout
+                android:id="@+id/re_item1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_item1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="转给我的朋友"
+                    android:textColor="@color/accent_blue"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/re_item2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_item2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="转给正事多用户"
+                    android:textColor="@color/accent_blue"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/re_item3"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_item3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="收付款"
+                    android:textColor="@color/accent_blue"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/re_item5"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                >
+                <TextView
+                    android:id="@+id/tv_item5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="收付款"
+                    android:textColor="@color/accent_blue"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/re_item4"
+            android:layout_below="@+id/ll"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/tb_munion_icon">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="取消"
+                android:textColor="@color/accent_blue"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

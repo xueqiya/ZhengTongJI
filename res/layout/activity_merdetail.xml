@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/common_top_bar_blue">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fx_top_bar_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="详情"
+            android:textColor="@color/gray"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账单明细"
+            android:textColor="@color/gray"
+            android:textSize="18dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/iv_back" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/v1"
+        android:layout_below="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/black"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/tv_jine_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="入账金额"
+            android:textSize="18dp"
+            android:textColor="@color/gray"/>
+
+        <TextView
+            android:id="@+id/tv_jine"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            android:text="0.00"
+            android:textColor="@color/red"/>
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/v2"
+        android:layout_below="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/black"/>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="类        型"
+            android:textSize="18dp"
+            android:textColor="@color/gray"/>
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:textSize="18dp"
+            android:text="收入"
+            android:textColor="#000"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="交易方式"
+            android:textSize="18dp"
+            android:textColor="@color/gray"/>
+
+        <TextView
+            android:id="@+id/tv_fangshi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:textSize="18dp"
+            android:text="余额"
+            android:textColor="#000"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="时        间"
+            android:textSize="18dp"
+            android:textColor="@color/gray"/>
+
+        <TextView
+            android:id="@+id/tv_from"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:textSize="18dp"
+            android:text="2017-04-26 11:30"
+            android:textColor="#000"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="交易单号"
+            android:textSize="18dp"
+            android:textColor="@color/gray"/>
+
+        <TextView
+            android:id="@+id/tv_danhao"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:textSize="17dp"
+            android:text="201704261130"
+            android:textColor="#000"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="备        注"
+            android:textSize="18dp"
+            android:textColor="@color/gray"/>
+
+        <TextView
+            android:id="@+id/tv_beizhu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:textSize="18dp"
+            android:text="正事多-转账"
+            android:textColor="#000"/>
+    </RelativeLayout>
+    <View
+        android:id="@+id/v3"
+        android:layout_below="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/black"/>
+</LinearLayout>

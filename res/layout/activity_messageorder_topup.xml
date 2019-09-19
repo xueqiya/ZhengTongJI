@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:background="#fff"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#f7f7f7">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fx_top_bar_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="短信充值"
+            android:textColor="@color/gray"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_back"
+            android:text="返回"
+            android:textColor="@color/gray"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:visibility="gone"
+        android:src="@drawable/messagealert"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:background="#007AFF"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+
+        <LinearLayout
+
+            android:id="@+id/type_20"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginTop="13dp"
+                android:textSize="17dp"
+                android:textColor="#007AFF"
+                android:textAlignment="center"
+                android:text="20单"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="17dp"
+                android:textColor="#007AFF"
+                android:textAlignment="center"
+                android:text="支付：20元"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/type_50"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginTop="13dp"
+                android:textSize="17dp"
+                android:textColor="#007AFF"
+                android:textAlignment="center"
+                android:text="50单"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="17dp"
+                android:textColor="#007AFF"
+                android:textAlignment="center"
+                android:text="支付：50元"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/type_100"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginTop="13dp"
+                android:textSize="17dp"
+                android:textColor="#007AFF"
+                android:textAlignment="center"
+                android:text="100单"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="17dp"
+                android:textColor="#007AFF"
+                android:textAlignment="center"
+                android:text="支付：100元"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/sumText"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:inputType="number"
+        android:background="@null"
+        android:hint="其他数量"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <View
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:background="@color/light_grey"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <Button
+        android:id="@+id/btn_tx_next"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="立即充值"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:background="@drawable/fx_bg_btn_green"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+</LinearLayout>

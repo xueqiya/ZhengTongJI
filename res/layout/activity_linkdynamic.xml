@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#f7f7f7" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fx_top_bar_back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:layout_toRightOf="@+id/iv_back"
+            android:textColor="@color/gray"
+            android:text="返回"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:text="动态详情"/>
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/wv_webview"
+        android:layout_above="@+id/rl_reddetail"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="match_parent">
+
+    </WebView>
+
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/rl_reddetail"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <TextView
+            android:background="@color/light_grey"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp" />
+
+        <ImageView
+            android:id="@+id/image_redpage"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@null"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+
+
+        <Button
+            android:id="@+id/bt_left"
+            android:layout_marginLeft="15dp"
+            android:layout_alignBottom="@+id/image_redpage"
+            android:textColor="@color/white"
+            android:text="立即购买"
+            android:background="@drawable/fx_bg_btn_red"
+            android:layout_width="70dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:id="@+id/tv_price1"
+            android:layout_above="@+id/bt_left"
+            android:layout_alignStart="@+id/bt_left"
+            android:layout_marginBottom="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/red"
+            android:text="2000.00"
+            android:textSize="16dp"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_above="@+id/tv_price1"
+            android:layout_alignStart="@+id/tv_price1"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/light_grey"
+            android:textAlignment="center"
+            android:text="线上价"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/bt_right"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignBottom="@+id/image_redpage"
+            android:textColor="@color/white"
+            android:text="导航进店"
+            android:background="@drawable/fx_bg_btn_green"
+            android:layout_width="70dp"
+            android:layout_height="25dp" />
+
+
+        <TextView
+            android:id="@+id/tv_price2"
+            android:layout_above="@+id/bt_right"
+            android:layout_alignStart="@+id/bt_right"
+            android:layout_marginBottom="8dp"
+            android:textAlignment="center"
+            android:text="1600.00"
+            android:textColor="@color/red"
+            android:textSize="16dp"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_above="@+id/tv_price2"
+            android:layout_alignStart="@+id/tv_price2"
+            android:layout_marginBottom="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/light_grey"
+            android:text="线下价"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

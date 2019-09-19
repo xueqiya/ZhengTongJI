@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:background="#fff"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#f7f7f7">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:onClick="back"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fx_top_bar_back" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="短信派单"
+                android:textColor="@color/gray"
+                android:textSize="20dp"
+                android:id="@+id/textView23" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="返回"
+                android:textColor="@color/gray"
+                android:textSize="18dp"
+                android:layout_alignTop="@+id/textView23"
+                android:layout_toEndOf="@+id/iv_back"
+                android:id="@+id/textView24" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/image_advert"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+        <RelativeLayout
+            android:id="@+id/countInfo"
+            android:background="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+
+            <TextView
+                android:id="@+id/allCount"
+                android:textColor="@color/red"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:text="总数"
+                android:textAlignment="center"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/remain"
+                android:textColor="@color/red"
+                android:layout_marginTop="20dp"
+                android:layout_toLeftOf="@+id/allCount"
+                android:layout_marginRight="20dp"
+                android:textAlignment="center"
+                android:text="剩余"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_remain"
+                android:text="0"
+                android:textColor="@color/red"
+                android:layout_below="@+id/remain"
+                android:layout_marginTop="10dp"
+                android:layout_alignLeft="@+id/remain"
+                android:textAlignment="center"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/sendOrder"
+                android:textColor="@color/red"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/allCount"
+                android:layout_marginLeft="20dp"
+                android:text="派单"
+                android:textAlignment="center"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_sendOrder"
+                android:text="0"
+                android:textColor="@color/red"
+                android:layout_below="@+id/sendOrder"
+                android:layout_marginTop="10dp"
+                android:layout_alignLeft="@+id/sendOrder"
+                android:textAlignment="center"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_allCount"
+                android:text="0"
+                android:textColor="@color/red"
+                android:textAlignment="center"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_sendOrder"
+                android:layout_alignBottom="@+id/tv_sendOrder"
+                android:layout_alignStart="@+id/allCount" />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_topupBtn"
+            android:textColor="@color/white"
+            android:text="短信充值"
+            android:background="@drawable/fx_bg_btn_green"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/btn_orderSet"
+            android:textColor="@color/white"
+            android:text="接单设置"
+            android:background="@drawable/fx_bg_btn_green"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/orange"
+            android:text="短信派单的作用："
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="14dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/light_grey"
+            android:text="将与个人专业相关的订单，以短信的方式发送到手机，可以更及时的把握订单，在无网络的情况下，同样可以接收派单信息，订单不遗漏。"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/orange"
+            android:text="短信内容格式："
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_identify"
+            android:textSize="14dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/light_grey"
+            android:text="客户姓名+电话+/需要专业描述/距离范围。\n对比：做过竞价排名的应该知道，对比点击—转化咨询—转化成交率，仅仅点击就需要支付多大的成本！\n优势：直接派单，没有点击成本，不需要优化技术，只需要做一点就是订单成交率。\n操作：只需要设置接单专业，和接单价格就够
+不需要SEO优化、不需要SEM推广操作。\n规则：充值派单短信费不支持退款，不过期。"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/orange"
+            android:text="收费标准与理由："
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="14dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/light_grey"
+            android:text="增值服务/在未登录/无网络/没能及时发现订单的场景下，可以最大程度的把握订单，短信成本+智能+人工+服务器核算（1元/次）"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="12dp"
+            android:textColor="@color/light_grey"
+            android:text="正事多：不收订单抽成、不做竞价排名、涉及成本合理收费，希望用户理解支持"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <include layout="@layout/table_messageorder_layout"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="1dp"
+            />
+
+        <TextView
+
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+
+</ScrollView>

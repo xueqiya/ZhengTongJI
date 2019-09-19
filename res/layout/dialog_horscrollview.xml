@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="280dp"
+        android:layout_height="420dp"
+        android:background="@drawable/fx_bg_btn_white">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="选择报价单:"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center|bottom"
+            android:textSize="16dp"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/tv_tishi"
+            android:layout_below="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="14dp"
+            android:textColor="@color/gray"
+            android:gravity="center"
+            android:text="企业的优先，质保优先\n报价完全保密,其他人无法查看"/>
+
+        <com.sangu.apptongji.main.widget.CenterShowHorizontalScrollView
+            android:id="@+id/ct_scrollView"
+            android:layout_below="@+id/tv_tishi"
+            android:layout_above="@+id/rl_btn"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/tv_xiadanmoshi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_btn"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true">
+            <Button
+                android:id="@+id/btn_contact"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:text="沟通一下"
+                android:textColor="#fff"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/fx_bg_btn_green"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true">
+            <Button
+                android:id="@+id/btn_commit"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="开报价单"
+                android:textColor="#fff"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/fx_bg_btn_green"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#f7f7f7">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fx_top_bar_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_back"
+            android:text="消息"
+            android:textColor="@color/gray"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公告详情"
+            android:textSize="18dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/gray"/>
+
+        <TextView
+            android:id="@+id/tv_setting"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="设置"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/accent_blue"
+            android:layout_marginRight="15dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_gonggao"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_centerVertical="true"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/app_logo"
+            android:layout_alignTop="@+id/unread_msg_number"
+            android:layout_alignRight="@+id/unread_msg_number"
+            android:layout_alignEnd="@+id/unread_msg_number" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="6dp"
+            android:text="正事多APP：商务工具使用教程"
+            android:layout_toRightOf="@id/avatar"
+            android:textColor="@color/accent_red"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/avatar"
+            android:singleLine="true"
+            android:text="如何使用：接单、赚红包、考勤、定位......"
+            android:ellipsize="end"
+            android:layout_marginLeft="13dp"
+            android:padding="7dp"
+            android:textColor="@color/list_itease_secondary_color"
+            android:textSize="14dp" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/gray"/>
+
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/btn_corner_white">
+
+
+    <TextView
+        android:textSize="14dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:text="搜索找人咨询预约，太麻烦"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="14dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:text="直接发派单，等着服务上门"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/issueBtn"
+            android:text="发派单  给我派人"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_corner_orange"
+            android:layout_width="170dp"
+            android:layout_height="32dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:textSize="12dp"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
+        android:text="不限时间，不限行业，不限地点"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="12dp"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
+        android:text="随时需要，随时发单，极速派人"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tv_issue2"
+            android:text="发派单  给(他/她)派人"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_corner_buledrak3"
+            android:layout_width="170dp"
+            android:layout_height="32dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:textSize="12dp"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
+        android:text="适用于：厂商、网商、企业、派遣、售后"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="12dp"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
+        android:text="发布派单，为第三方提供服务，交付签收"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/btn_bottom"
+            android:text="我要接单"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/fx_bg_btn_green"
+            android:layout_width="170dp"
+            android:layout_height="32dp" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:textSize="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/dark_red"
+        android:text="此处不允许发广告、虚假违规信息"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="10dp"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/dark_red"
+        android:text="违规者将在所有相关联盟平台被禁用"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>

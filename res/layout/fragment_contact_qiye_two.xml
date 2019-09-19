@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/renewfriends"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fx_btn_list_item_bg"
+        android:clickable="true" >
+
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/refresh_list"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/tv_join_qymsg"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@color/accent_blue"
+            android:id="@+id/tv_join_qymsg"
+            android:text="会议发言"
+            android:layout_alignParentBottom="true"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+
+</LinearLayout>

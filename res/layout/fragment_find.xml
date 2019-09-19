@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <com.sangu.apptongji.main.widget.DragFrameLayout
+        android:id="@+id/becausefloat"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical" >
+        <LinearLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#f7f7f7"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_ren"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:layout_centerVertical="true"
+                    android:text="找人"
+                    android:textColor="@color/blue"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="18dp"
+                    />
+
+                <TextView
+                    android:id="@+id/unread_number_yonghu"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_marginRight="23dp"
+                    android:layout_marginTop="15dp"
+                    android:visibility="visible"
+                    android:gravity="center"
+                    android:background="@drawable/fx_bg_text_darkred"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_qite"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#AAAAAA"
+                    android:layout_centerVertical="true"
+                    android:textSize="18dp"
+                    android:text="派单"/>
+                <TextView
+                    android:id="@+id/unread_number_dongtai"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_marginRight="23dp"
+                    android:layout_marginTop="15dp"
+                    android:visibility="invisible"
+                    android:gravity="center"
+                    android:background="@drawable/fx_bg_text_darkred"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_bu"
+                android:layout_width="33dp"
+                android:layout_height="match_parent">
+                <RadioButton
+                    android:id="@+id/rb_shxb"
+                    android:layout_width="33dp"
+                    android:text="派人"
+                    android:background="@drawable/fx_bg_text_gra"
+                    android:padding="5dp"
+                    android:checked="false"
+                    android:layout_centerInParent="true"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:textSize="10dp"
+                    android:button="@null"
+                    android:layout_height="33dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_qiye"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#AAAAAA"
+                    android:layout_centerVertical="true"
+                    android:textSize="18dp"
+                    android:text="企业"/>
+                <ImageView
+                    android:id="@+id/iv_new_hongbao"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="fitCenter"
+                    android:visibility="invisible"
+                    android:src="@drawable/red_packeg"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_qunzu"
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#AAAAAA"
+                    android:layout_centerVertical="true"
+                    android:textSize="18dp"
+                    android:text="动态"/>
+
+                <TextView
+                    android:id="@+id/unread_number_bigdata"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="15dp"
+                    android:visibility="invisible"
+                    android:gravity="center"
+                    android:background="@drawable/fx_bg_text_darkred"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v1"
+            android:layout_below="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/crop__selector_focused"/>
+
+        <com.sangu.apptongji.main.widget.NoCacheViewPager
+            android:id="@+id/vp"
+            android:background="#fff"
+            android:layout_below="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.sangu.apptongji.main.widget.NoCacheViewPager>
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <RelativeLayout
+
+                android:id="@+id/scroll_alert"
+                android:layout_marginTop="92dp"
+                android:background="@drawable/btn_stroke_grey"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp">
+
+                <com.sangu.apptongji.widget.CircleImageView
+                    android:id="@+id/alertImage"
+                    android:src="@drawable/alertlaba2"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+                <TextView
+                    android:id="@+id/tv_alert"
+                    android:gravity="center"
+                    android:textColor="@color/light_grey"
+                    android:text="8秒前 绿色三谷接到 家具安装下单"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/alertImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" />
+
+
+
+            </RelativeLayout>
+
+
+            <ImageButton
+                android:id="@+id/btn_fabu"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/zhengshiduo"
+                android:background="#00000000"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_moveIssue"
+                android:visibility="gone"
+
+                android:layout_alignStart="@+id/btn_fabu"
+                android:layout_alignEnd="@+id/btn_fabu"
+                android:layout_alignTop="@+id/btn_fabu"
+                android:layout_alignBottom="@+id/btn_fabu"
+                android:layout_width="60dp"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:id="@+id/tv_issueTitle"
+                    android:background="@drawable/btn_corner_blue30"
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:text="给我派人"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <Button
+
+                android:id="@+id/btn_tou"
+                android:layout_alignTop="@+id/btn_fabu"
+                android:layout_alignLeft="@+id/btn_fabu"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:background="@null"
+                android:text=""
+                android:visibility="gone"
+                android:gravity="bottom|center"
+                android:textSize="14dp"
+                android:paddingBottom="8dp"
+                android:textColor="#fff"/>
+        </RelativeLayout>
+    </com.sangu.apptongji.main.widget.DragFrameLayout>
+
+</RelativeLayout>

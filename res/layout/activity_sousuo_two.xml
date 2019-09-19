@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#f7f7f7" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fx_top_bar_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_back"
+            android:text="返回"
+            android:textColor="@color/gray"
+            android:textSize="18dp" />
+
+        <TextView
+            android:text="动态搜索"
+            android:textSize="20dp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_below="@+id/title"
+        android:background="@drawable/login_input"
+        android:layout_margin="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radiozhy"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="内容"
+                android:visibility="visible"
+                android:background="#fff"
+                android:paddingRight="2dp"
+                android:paddingLeft="2dp"
+                android:textColor="@color/em_main_botton_text_color_red"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:button="@null"
+                android:layout_height="match_parent"/>
+            <RadioButton
+                android:id="@+id/radiogs"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="距离优先"
+                android:visibility="visible"
+                android:background="#fff"
+                android:paddingRight="2dp"
+                android:paddingLeft="2dp"
+                android:textColor="@color/light_grey"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:button="@null"
+                android:layout_height="match_parent"/>
+            <RadioButton
+                android:id="@+id/radioxm"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="专业相关"
+                android:visibility="visible"
+                android:background="#fff"
+                android:paddingRight="2dp"
+                android:paddingLeft="2dp"
+                android:textColor="@color/light_grey"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:button="@null"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_sousuo"
+            android:layout_below="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_input"
+            android:enabled="true"
+            android:gravity="center|left"
+            android:textColor="#000"
+            android:hint="输入要搜索的内容"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColorHint="@color/gray"
+            android:textSize="18dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/fx_bg_btn_green"
+            android:text="搜        索"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/fx_bg_btn_green"
+            android:text="清空搜索"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+
+        <TextView
+            android:text="提示：为了优化客户发布派单需求的体验，用户通过坐标+图片+描述，更便捷快速的发布派单，以方便更多需求用户，提高派单类型和派单量。
+\n接单：接单人要时时留意刷新数据，筛查订单时需要了解用户需求，根据用户需求进行“搜单”...
+\n例如：家具安装，家具维修，水电，家电维修，家政"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/red"
+            android:textSize="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="用户可能不会用专业词进行派单
+\n用户常用词：安装几个衣柜，书桌安装，家具坏了，需要修空调，不制冷了，水管漏水了，需要打扫卫生等...."
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/blue"
+            android:textSize="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_advert"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tv_advert"
+        android:layout_alignTop="@+id/image_advert"
+        android:layout_marginTop="5dp"
+        android:layout_alignRight="@+id/image_advert"
+        android:layout_marginRight="8dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="广告"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:layout_width="30dp"
+        android:layout_height="15dp" />
+
+
+    <android.support.v4.view.ViewPager
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/vp_advertViewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+    </android.support.v4.view.ViewPager>
+
+    <TextView
+        android:id="@+id/tv_vpclick"
+        android:layout_alignTop="@+id/vp_advertViewPager2"
+        android:layout_alignBottom="@+id/vp_advertViewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

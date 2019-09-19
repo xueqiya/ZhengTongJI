@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/btn_corner_white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/issueBtn"
+            android:text="发布招标"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_corner_orange"
+            android:layout_width="170dp"
+            android:layout_height="32dp" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_marginTop="25dp"
+        android:textAlignment="center"
+        android:text="工程、工业、技术、难题"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:text="计划、施工、悬赏、招标"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:text="批量、需求、采购、生产"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:textSize="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/dark_red"
+        android:text="此处不允许发广告、虚假违规信息"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="10dp"
+        android:layout_marginBottom="40dp"
+        android:textAlignment="center"
+        android:textColor="@color/dark_red"
+        android:text="违规者将在所有相关联盟平台被禁用"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

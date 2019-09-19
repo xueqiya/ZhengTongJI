@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#f7f7f7">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fx_top_bar_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="质保"
+            android:textColor="@color/gray"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_back"
+            android:text="个人中心"
+            android:textColor="@color/gray"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginBottom="50dp"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_advert"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
+
+            <LinearLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:text="专业项目:"
+                    android:textSize="17dp"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView28" />
+
+                <TextView
+                    android:id="@+id/tv_xiangmu_mingcheng"
+                    android:textSize="17dp"
+                    android:textColor="#000"
+                    android:text="名称"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:text="展示金额:"
+                    android:textSize="17dp"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2" />
+
+                <EditText
+                    android:id="@+id/et_baozheng_jine"
+                    android:textSize="17dp"
+                    android:hint="请输入质保金额"
+                    android:textColor="#000"
+                    android:background="#fff"
+                    android:layout_marginLeft="28dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_zhr_bao"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="转入质保"
+                android:textColor="#fff"
+                android:textSize="17dp"
+                android:background="@drawable/fx_bg_btn_green"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+            <Button
+                android:id="@+id/btn_tx_bao"
+                android:visibility="gone"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="提取质保"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:background="@drawable/fx_bg_btn_green"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/accent_oriange"
+                android:text="质保的作用优势"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:id="@+id/textView22" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/accent_oriange"
+                android:text="1、提高用户主动下单机会\n2、提高用户搜索到的几率\n3、提高用户的消费信任度\n4、未派出订单可直接报价\n5、提高线下用户咨询量    "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="14dp"
+                android:id="@+id/textView21" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/accent_oriange"
+                android:text="提示"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:id="@+id/textView221" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/accent_oriange"
+                android:text="1、根据个人专业接单价值合理展示质保金额，建议：一般质保展示最低要大于单次接单最低价，也就是要高于客户出价，才有质保的意义，否则会引起客户反感（充值请确认账号与微信实名认证一致，会影响提现）\n2、可随时增加质保展示金额，提高竞争机会\n3、关于提出质保，在30日内无交易的情况下可以自由提出质保，但不再享有以上优先和特权功能\n4、首次展示质保功能免费,充提不收手续费功能费\n5、点亮后分享订单有红包"
+                android:layout_marginBottom="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:id="@+id/textView222" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

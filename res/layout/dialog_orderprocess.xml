@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/btn_corner_white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textSize="14dp"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:text="接单流程"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:background="#F5F5F5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="14dp">
+            
+            <TextView
+                android:id="@+id/tv_left"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/btn_corner_blue7"
+                android:layout_width="14dp"
+                android:layout_height="14dp" />
+
+            <TextView
+                android:background="#0091FF"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginRight="-4dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_left"
+                android:layout_toLeftOf="@+id/tv_mid"
+                android:layout_width="match_parent"
+                android:layout_height="6dp" />
+
+            <TextView
+                android:id="@+id/tv_mid"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_corner_blue7"
+                android:layout_width="14dp"
+                android:layout_height="14dp" />
+
+            <TextView
+                android:background="#0091FF"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginRight="-4dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_mid"
+                android:layout_toLeftOf="@+id/tv_right"
+                android:layout_width="match_parent"
+                android:layout_height="6dp" />
+
+            <TextView
+                android:id="@+id/tv_right"
+                android:layout_marginRight="25dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn_corner_blue7"
+                android:layout_width="14dp"
+                android:layout_height="14dp" />
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/tv_lefttop1"
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:text="选单沟通"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_below="@+id/tv_lefttop1"
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:text="报价接单"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_midtop2"
+                android:layout_centerHorizontal="true"
+                android:textSize="12dp"
+                android:text="用户同意报价"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_below="@+id/tv_midtop2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="12dp"
+                android:textSize="12dp"
+                android:text="开始提供服务"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_righttop1"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:textSize="12dp"
+                android:text="完成提交"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_below="@+id/tv_righttop1"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:textSize="12dp"
+                android:text="客户签字付款"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:textSize="12dp"
+                android:text="第三方派单需要签收码"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:textSize="14dp"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:text="规则流程"
+        android:textColor="@color/orange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textSize="12dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:text="当客户同意报价后，订单未完成前将不能进行其他接单"
+        android:textColor="@color/orange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="12dp"
+        android:layout_marginTop="3dp"
+        android:textAlignment="center"
+        android:text="完成服务提交后，务必当即获得客户签字验收并付款"
+        android:textColor="@color/orange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="12dp"
+        android:layout_marginTop="3dp"
+        android:textAlignment="center"
+        android:text="未完成订单，操作提交被客户拒签的，将面临禁单处罚"
+        android:textColor="@color/orange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="12dp"
+        android:layout_marginTop="3dp"
+        android:textAlignment="center"
+        android:text="订单金额在质保范围内的，可以立即提现到账"
+        android:textColor="@color/orange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/tv_softAgreement"
+        android:textSize="11dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:text="1、软件使用协议》"
+        android:textColor="#0091FF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_userAgreement"
+        android:textSize="11dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:text="2、个人信息保护及隐私政策协议》"
+        android:textColor="#0091FF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/tv_midBtn"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="同意"
+            android:background="@drawable/btn_corner_blue7"
+            android:textColor="@color/white"
+            android:layout_width="200dp"
+            android:layout_height="35dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

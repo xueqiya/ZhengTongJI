@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/all_content"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <TextView
+        android:id="@+id/tv_region"
+        android:layout_alignStart="@+id/top_view"
+        android:textColor="@color/black"
+        android:text="郑州市 第9名 当前地区指数排名"
+        android:gravity="center"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+
+
+    <TextView
+        android:id="@+id/tv_top"
+        android:layout_below="@+id/tv_region"
+        android:text="供指"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+
+
+    <View
+        android:id="@+id/top_view"
+        android:background="@drawable/bigdata_bgcolor"
+        android:layout_toRightOf="@+id/tv_top"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="200dp"
+        android:layout_height="14dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_bottom"
+        android:text="需数"
+        android:layout_below="@+id/tv_top"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+
+    <View
+        android:id="@+id/bottom_view"
+        android:background="@drawable/bigdata_colorbottom"
+        android:layout_marginLeft="5dp"
+        android:layout_width="130dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@+id/tv_bottom"
+        android:layout_below="@+id/top_view" />
+
+</RelativeLayout>

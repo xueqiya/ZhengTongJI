@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".main.activity.AttendanceActivity">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#f7f7f7">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:scaleType="center"
+            android:src="@drawable/main_back" />
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_back"
+            android:text="我的企业"
+            android:textColor="#1DAEFC"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="考勤"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="审批"
+            android:textColor="#1DAEFC"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="#fff"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/rg_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_day"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="日统计"
+                        android:textColor="@drawable/radio_text_selector"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rb_month"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="月统计"
+                        android:textColor="@drawable/radio_text_selector"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rb_year"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="年统计"
+                        android:textColor="@drawable/radio_text_selector"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_avatar"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="15dp"
+                        android:scaleType="fitXY" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_left"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tv_work_state"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="上班情况(-人)"
+                            android:textStyle="bold"
+                            android:textColor="#C6C6C6" />
+                        <TextView
+                            android:id="@+id/tv_overtime_state"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="加班情况(-人)"
+                            android:textStyle="bold"
+                            android:textColor="#C6C6C6" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tv_late_state"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="迟到情况(-人)"
+                            android:textStyle="bold"
+                            android:textColor="#C6C6C6" />
+                        <TextView
+                            android:id="@+id/tv_leave_state"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="请假情况(-人)"
+                            android:textStyle="bold"
+                            android:textColor="#C6C6C6" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/bg_statistics"
+                        android:gravity="center"
+                        android:text="统"
+                        android:textColor="#DBFDFD" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tv_work_ranking"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="上班情况排行"
+                            android:textStyle="bold"
+                            android:textColor="#C6C6C6" />
+                        <TextView
+                            android:id="@+id/tv_sale_ranking"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="业绩销量排行"
+                            android:textStyle="bold"
+                            android:textColor="#C6C6C6" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tv_late_ranking"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="迟到情况排行"
+                            android:textStyle="bold"
+                            android:textColor="#C6C6C6" />
+                        <TextView
+                            android:id="@+id/tv_visitor_ranking"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="流量引入排行"
+                            android:textStyle="bold"
+                            android:textColor="#C6C6C6" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.darwindeveloper.onecalendar.views.OneCalendarView
+                android:id="@+id/oneCalendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_calendar"
+                app:backgroundColorDaysOfMonth="#53c0c0c1"
+                app:currentDayBackgroundColor="#fad501"
+                app:textColorDaysOfAnotherMonth="#fff"
+                app:textColorDaysOfMonth="#fff"
+                app:textColorSelectedDay="#000000" />
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:divider="#DADADA"
+                android:dividerHeight="0.1dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

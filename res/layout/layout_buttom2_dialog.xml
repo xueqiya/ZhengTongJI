@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:background="@drawable/tb_munion_icon2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="请选择发布动态类型"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+            <RelativeLayout
+                android:visibility="visible"
+                android:id="@+id/re_item1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_item1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="案例动态"
+                    android:textColor="@color/accent_blue"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/re_item2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_item2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="坐标分享"
+                    android:textColor="@color/accent_blue"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/re_item3"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_item3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="商业动态"
+                    android:textColor="@color/accent_blue"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/re_item4"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_item4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="找人干活"
+                    android:textColor="@color/accent_blue"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/re_item6"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="找人干活"
+                    android:textColor="@color/accent_blue"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/re_item5"
+            android:layout_below="@+id/ll"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/tb_munion_icon2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="取消"
+                android:textColor="@color/accent_blue"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

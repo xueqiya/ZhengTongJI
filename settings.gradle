@@ -1,0 +1,7 @@
+
+
+//release时需要把下面的include相关的两行注释掉
+include ':library', ':jcvideoplayer', ':xrecyclerview', ':charts', ':onecalendar'
+include ':easeuilibrary'
+//project(':hyphenatechatsdk').projectDir = new File('../emclient-android/hyphenatechatsdk')
+include ':library'

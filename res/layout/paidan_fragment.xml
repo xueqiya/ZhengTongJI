@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="#f7f7f7" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fx_top_bar_back" />
+
+        <TextView
+            android:id="@+id/tvback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@id/iv_back"
+            android:text="企业详情"
+            android:textColor="@color/gray"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tvtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:text="派单列表"
+            android:textColor="#000"
+            android:textSize="18dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:background="#f7f7f7"
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/radioQiye"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="企业派单"
+            android:background="#fff"
+            android:checked="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/em_main_botton_text_color_red"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:button="@null"
+            android:layout_height="match_parent"/>
+
+        <RadioButton
+            android:id="@+id/radioXixia"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="线下派单"
+            android:background="#fff"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/em_main_botton_text_color_red"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:button="@null"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

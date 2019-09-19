@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/btn_corner_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="选择沟通方式\n对方支持"
+        android:layout_marginTop="10dp"
+        android:textSize="19dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tv_chatmode1"
+            android:text="订单留言"
+            android:background="@drawable/fx_bg_btn_green"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="35dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tv_chatmode2"
+            android:text="在线聊天"
+            android:background="@drawable/fx_bg_btn_green"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="35dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tv_chatmode3"
+            android:text="电话沟通"
+            android:background="@drawable/fx_bg_btn_green"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="35dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tv_chatmode4"
+            android:text="直接报价"
+            android:background="@drawable/fx_bg_btn_green"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="35dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

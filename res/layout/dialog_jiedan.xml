@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/fx_bg_btn_white">
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="210dp"
+            android:background="@drawable/fx_bg_btn_white"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#000"
+                />
+            <RelativeLayout
+                android:id="@+id/re_item1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/fx_bg_text_orange"
+                    android:gravity="center"
+                    android:text="极速派人"
+                    android:textSize="17dp"
+                    android:textColor="#fff"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/re_item2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#fff"
+                android:paddingLeft="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/bianhao_two" />
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60dp"
+                    android:text="点 亮 质 保"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/re_item3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#fff"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60dp"
+                    android:text="发宝藏坐标"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/bianhao_three"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/imageView3" />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/re_item4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#fff"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60dp"
+                    android:text="发名片红包"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/bianhao_four"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="30dp"
+                    android:id="@+id/imageView2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/re_item7"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#fff"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/tv7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60dp"
+                    android:text="奖励与支持"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/bianhao_five"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="30dp"
+                    android:id="@+id/imageView7" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/re_item5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#fff"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60dp"
+                    android:text="红包商业动态"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:src="@drawable/bianhao_sex"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="30dp"
+                    android:id="@+id/imageView6" />
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/re_item6"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#fff"
+                android:paddingLeft="10dp">
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

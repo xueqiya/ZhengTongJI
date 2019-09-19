@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#f7f7f7">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fx_top_bar_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_back"
+            android:text="消息"
+            android:textColor="@color/gray"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公告"
+            android:textSize="18dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/gray"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="1、如何“接单”？"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:layout_marginLeft="15dp"
+            android:gravity="center|left"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="2、如何“赚红包”？"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:layout_marginLeft="15dp"
+            android:gravity="center|left"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="3、如何“推广”自己？"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:layout_marginLeft="15dp"
+            android:gravity="center|left"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll4"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="4、如何“招人找服务”？"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:layout_marginLeft="15dp"
+            android:gravity="center|left"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll5"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="5、如何“管理考勤打卡”？"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:layout_marginLeft="15dp"
+            android:gravity="center|left"/>
+
+    </LinearLayout>
+</LinearLayout>

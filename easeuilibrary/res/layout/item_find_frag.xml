@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#00000000">
+
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/popup"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <Button
+            android:id="@+id/btn_daohang"
+            android:layout_marginTop="3dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/fx_bg_btn_green"
+            android:text="选择这里"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_xiangqing"
+            android:layout_marginTop="3dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/fx_bg_btn_green"
+            android:text="取消操作"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

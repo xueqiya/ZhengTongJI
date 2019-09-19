@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#f7f7f7">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fx_top_bar_back" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="投诉举报"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_neirong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="200dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:hint="请输入投诉或举报内容"
+        android:gravity="top|left"
+        android:textSize="16dp"
+        android:textColor="#000"
+        android:background="@drawable/login_input"/>
+    <Button
+        android:id="@+id/btn_tijiao"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/fx_bg_btn_green"
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="#fff"
+        android:text="提    交"/>
+</LinearLayout>

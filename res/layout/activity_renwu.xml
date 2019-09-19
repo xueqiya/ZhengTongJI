@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+    <LinearLayout
+        android:id="@+id/llImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#f7f7f7" >
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:onClick="back"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fx_top_bar_back" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:layout_toRightOf="@+id/iv_back"
+                android:textColor="@color/gray"
+                android:text="返回"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:text="发布需求"/>
+
+            <TextView
+                android:id="@+id/tv_orderAlert"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/blue"
+                android:text="协议/流程"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/login_input">
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="需   要"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="@color/text_black"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="9dp" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="@dimen/dp_0.1"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@+id/tv1"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:background="@color/black"/>
+
+            <EditText
+                android:id="@+id/et_biaoqian"
+                android:layout_toRightOf="@+id/tv2"
+                android:background="@null"
+                android:gravity="center|left"
+                android:textSize="14dp"
+                android:hint="关键字（需要的服务或产品）"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:layout_marginBottom="-2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/tv1"
+                android:layout_alignLeft="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/demandpoint"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/rl_demandType"
+            android:layout_marginTop="-11dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/login_input"
+            android:orientation="vertical"
+            android:layout_width="75dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:id="@+id/tv_demandType1"
+                android:layout_weight="1"
+                android:text="服   务"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+
+                android:layout_width="match_parent"
+                android:background="@color/light_grey"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:id="@+id/tv_demandType2"
+                android:layout_weight="1"
+                android:text="产   品"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@color/light_grey"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:id="@+id/tv_demandType3"
+                android:layout_weight="1"
+                android:text="方   案"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/login_input">
+            <EditText
+                android:id="@+id/et_miaoshu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:gravity="top|left"
+                android:textSize="14dp"
+                android:hint="描述您的需求"
+                android:textColor="@color/black"
+                android:background="@null"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/login_input">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_below="@+id/tv_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:overScrollMode="never" />
+            <FrameLayout
+                android:id="@+id/fl_video"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <VideoView
+                    android:id="@+id/uVideoView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="15dp"/>
+
+            </FrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/login_input">
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="位    置"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="@color/text_black"/>
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="@dimen/dp_0.1"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@+id/tv3"
+                android:layout_centerVertical="true"
+                android:background="@color/black"/>
+            <EditText
+                android:id="@+id/et_didian"
+                android:layout_toRightOf="@+id/tv4"
+                android:background="@null"
+                android:gravity="center|left"
+                android:textSize="14dp"
+                android:hint="选择需要服务的地点"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/login_input">
+            <TextView
+                android:id="@+id/tv_chujia"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="意向价"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="@color/text_black"/>
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="@dimen/dp_0.1"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@+id/tv_chujia"
+                android:layout_centerVertical="true"
+                android:background="@color/black"/>
+
+            <EditText
+                android:id="@+id/et_chujia"
+                android:background="@null"
+                android:gravity="center|left"
+                android:textSize="14dp"
+                android:hint="您的意向出价(选填)"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/tv5" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_biaozhu"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/login_input">
+            <TextView
+                android:id="@+id/tv_chujia1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="标    注"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="@color/text_black"/>
+            <TextView
+                android:id="@+id/tv51"
+                android:layout_width="@dimen/dp_0.1"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@+id/tv_chujia1"
+                android:layout_centerVertical="true"
+                android:background="@color/black"/>
+
+            <EditText
+                android:id="@+id/et_chujia1"
+                android:background="@null"
+                android:gravity="center|left"
+                android:textSize="14dp"
+                android:hint="填写品牌标注(选填)"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/tv51" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rl_thridName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/login_input">
+            <TextView
+                android:id="@+id/tv_thridName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="姓    名"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="@color/text_black"/>
+            <TextView
+                android:id="@+id/tv_thrid51"
+                android:layout_width="@dimen/dp_0.1"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@+id/tv_thridName"
+                android:layout_centerVertical="true"
+                android:background="@color/black"/>
+
+            <EditText
+                android:id="@+id/et_thridName"
+                android:background="@null"
+                android:gravity="center|left"
+                android:textSize="14dp"
+                android:hint="客户姓名"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/tv_thrid51" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rl_thridPhone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/login_input">
+            <TextView
+                android:id="@+id/tv_thridPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="电    话"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="@color/text_black"/>
+            <TextView
+                android:id="@+id/tv_thridphone51"
+                android:layout_width="@dimen/dp_0.1"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@+id/tv_thridPhone"
+                android:layout_centerVertical="true"
+                android:background="@color/black"/>
+
+            <EditText
+                android:id="@+id/et_thridPhone"
+                android:background="@null"
+                android:gravity="center|left"
+                android:textSize="14dp"
+                android:hint="客户电话"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/tv_thridphone51" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rl_thridAdress"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/login_input">
+            <TextView
+                android:id="@+id/tv_thridAdress"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="地    址"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="@color/text_black"/>
+            <TextView
+                android:id="@+id/tv_thridadress51"
+                android:layout_width="@dimen/dp_0.1"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@+id/tv_thridAdress"
+                android:layout_centerVertical="true"
+                android:background="@color/black"/>
+
+            <EditText
+                android:id="@+id/et_thridAdress"
+                android:background="@null"
+                android:gravity="center|left"
+                android:textSize="14dp"
+                android:hint="客户地址"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/tv_thridadress51" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="企业的优先，质保优先"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="@color/accent_oriange"/>
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/fx_bg_btn_oriange"
+            android:gravity="center"
+            android:text="极速派人"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+</ScrollView>

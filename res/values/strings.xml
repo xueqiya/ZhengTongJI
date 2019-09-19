@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="msg_load_ing">努力加载中</string>
+    <string name="image">图片</string>
+    <string name="all_image">所有图片</string>
+    <string name="preview">预览</string>
+    <string name="msg_no_camera">无法启用系统相机</string>
+    <string name="msg_amount_limit">已经达到最高选择数量</string>
+    <string name="rv_with_footer_loading">正在加载数据…</string>
+    <string name="rv_with_footer_pull_load_more">上拉或点击加载更多</string>
+    <string name="done">完成</string>
+    <string name="done_with_count">完成(%1$d/%2$d)</string>
+    <string name="image_index">%1$d/%2$d</string>
+    <string name="deleted_a_photo">删除了一张图片</string>
+    <string name="confirm_to_delete">确认删除？</string>
+    <string name="yes">确定</string>
+    <string name="undo">撤消</string>
+    <string name="play_on_my_video_activity">start</string>
+    <string name="tx11">开始</string>
+    <string name="tx12">结束</string>
+    <string name="tx13">log2file</string>
+    <string name="tx14">vod2sw</string>
+    <string name="tx15">请选择:</string>
+    <string name="tx16">start</string>
+    <string name="tx17">end</string>
+    <string name="tx18">说明: Debug String:\n1. 保存log到文件: log2file=true   (文件名及位置/mnt/sdcard/ucloud-当前日期时间.log)\n2. 停止log到文件: log2file=end (千万别忘了)\n</string>
+    <string name="tx19">vod2hw</string>
+    <string name="main_search_empty">什么都没找到</string>
+    <string name="main_search_hint">输入要检索的关键字</string>
+    <string name="map_send_text">发送位置</string>
+    <string name="picker_internalerror">发生错误</string>
+    <string name="illegal_date">日期不在许可范围内!</string>
+    <string name="range_date">日期范围不合法!</string>
+</resources>

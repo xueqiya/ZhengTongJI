@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/renewfriends"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fx_btn_list_item_bg"
+        android:clickable="true">
+        <RelativeLayout
+            android:id="@+id/re_newfriends"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:background="@drawable/fx_btn_list_item_bg"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/fx_icon_item_new" />
+
+            <TextView
+                android:id="@+id/tv_newfriends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/iv_avatar"
+                android:text="新的朋友"
+                android:textColor="#353535"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/refresh_list"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/rl_search_friends"
+            android:layout_height="match_parent"/>
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rl_search_friends"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:background="@color/accent_blue"
+            android:layout_height="40dp">
+            <TextView
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:id="@+id/tv_search_friends"
+                android:text="通讯录同步"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/tv1"
+                android:visibility="gone"
+                android:layout_toRightOf="@+id/tv_search_friends"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="2dp"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@drawable/fx_bg_text_darkred"/>
+            <TextView
+                android:id="@+id/tv2"
+                android:visibility="gone"
+                android:layout_toRightOf="@+id/tv_search_friends"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="2dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:text="99"
+                android:textSize="8dp"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:background="@drawable/fx_bg_text_darkred"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

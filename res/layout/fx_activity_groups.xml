@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/common_top_bar_blue" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fx_top_bar_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_back"
+            android:text="群聊"
+            android:textColor="#000"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:src="@drawable/ease_blue_add" />
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/iv_add"
+            android:clickable="true"
+            android:src="@drawable/fx_main_activity_search" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/groupListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EBEBEB"
+        android:dividerHeight="0.1dp"
+        android:divider="#dadada"
+        android:descendantFocusability="afterDescendants"
+        android:fastScrollEnabled="false" />
+
+</LinearLayout>

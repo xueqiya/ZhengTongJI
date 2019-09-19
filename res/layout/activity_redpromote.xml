@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="#f7f7f7" >
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fx_top_bar_back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:text="推荐"
+            android:textColor="#000"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_back"
+            android:text="返回"
+            android:textColor="@color/gray"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="#fff"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/topbg1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tv_authTitle"
+                    android:layout_marginTop="25dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="19dp"
+                    android:text="您的账号暂未获得推荐补贴"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/red_balance"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="15dp"
+                    android:textSize="20dp"
+                    android:text="0 元"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:text="提到余额,可提现到微信(点击金额可提现)"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/tv_promoteTitle"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:text="您的账号暂未获得推荐补贴"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/topbg5"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="135dp">
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"
+                    android:text="完成任务即可开通招标订单权限"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_pushstore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_frist"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:text="1、发个5星通知"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_below="@+id/tv_frist"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:text="告诉全国你的专业在哪个地区接单"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_pushstore"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:text="提交任务"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_download"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_frist2"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:text="2、试用体验任务"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_below="@+id/tv_frist2"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:text="下载后试用2分钟，给5星评论并截图上传"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_pushDownLoad"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:text="提交任务"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/topbg4"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="57dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl_wechat"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_wechattitle"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:text="朋友圈点赞任务"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_below="@+id/tv_wechattitle"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:text="1、积累五个赞，提交截图，可获得红包"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_wechatclick"
+                        android:layout_marginRight="20dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:text="提交任务"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/topbg8"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"
+                    android:text="帮助推荐人获得推荐补贴"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/rl_commentStore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:text="1、5星留言告诉大家开始接单"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:text="任务    待完成"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_recommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:text="1、推荐邀请好友"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:text="任务    待完成"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_shareLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:text="2、每天分享接单坐标"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:text="任务    待完成"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="0dp"
+                        android:text="3、推荐分享名片"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:text="任务    待完成"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:text="4、分享坐标"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:text="任务    待完成"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="0dp"
+                        android:text="5、分享商业动态"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:text="任务    待完成"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:text="6、分享案例"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:text="任务    待完成"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:textSize="12dp"
+                android:textAlignment="center"
+                android:text="订单不抽成，没有竞价排名广告，公平开放的接单环境"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="12dp"
+                android:textAlignment="center"
+                android:text="需要大家共同推广，谁贡献谁受益，贡献越多受益越大"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="12dp"
+                android:textAlignment="center"
+                android:text="个人等级越高；贡献越大派单质量越高"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="12dp"
+                android:textAlignment="center"
+                android:text="地区等级越高；派单密度增加距离越近"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="12dp"
+                android:textAlignment="center"
+                android:text="行业等级越高；相关专业派单数量越多"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:text="通过分享推荐提高个人等级，获得更多接单机会，相关专业的订单匹配更精准，获得派单机会，通过：行业群、地区群、论坛、等分享可更有效提高行业、地区及个人等级"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:id="@+id/llImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ebebeb"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#f7f7f7" >
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:onClick="back"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fx_top_bar_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/iv_back"
+                android:text="企业详情"
+                android:textColor="@color/gray"
+                android:textSize="18dp" />
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="80dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:text="上传图片"
+                android:textColor="@color/accent_blue"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/fx_btn_list_item_bg">
+
+            <TextView
+                android:id="@+id/tv_note"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="上传头像图片(最多八张)"
+                android:textColor="#000"
+                android:textSize="18dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_below="@+id/tv_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:overScrollMode="never" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#dadada"
+                android:id="@+id/view" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/fx_btn_list_item_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tv_temp_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="企业名称"
+                android:textColor="#AAAAAA"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@id/tv_temp_name"
+                android:ellipsize="end"
+                android:text="点击编辑"
+                android:gravity="right"
+                android:singleLine="true"
+                android:textColor="#AAAAAA"
+                android:textSize="16dp" />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/next"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#dadada" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/re_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fx_btn_list_item_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tv_temp_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:text="企业简介"
+                android:textColor="#353535"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/tv_sign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_below="@+id/tv_temp_sign"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/next"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_below="@+id/tv_sign"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#dadada" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_major"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/fx_btn_list_item_bg"
+            android:clickable="false" >
+
+            <TextView
+                android:id="@+id/tv_temp_major"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="我的专业"
+                android:textColor="#353535"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_major1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_temp_major"
+            android:background="@drawable/fx_btn_list_item_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tv_temp_major1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="专业项目1"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <TextView
+                android:gravity="right"
+                android:layout_marginLeft="13dp"
+                android:id="@+id/tv_major1"
+                android:text="点击编辑"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@id/tv_temp_major1"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/next"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_major2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_temp_major"
+            android:background="@drawable/fx_btn_list_item_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tv_temp_major2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="专业项目2"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <TextView
+                android:gravity="right"
+                android:layout_marginLeft="13dp"
+                android:id="@+id/tv_major2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:text="点击编辑"
+                android:layout_toRightOf="@id/tv_temp_major2"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/next"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_major3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_temp_major"
+            android:background="@drawable/fx_btn_list_item_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tv_temp_major3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="专业项目3"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <TextView
+                android:gravity="right"
+                android:layout_marginLeft="13dp"
+                android:id="@+id/tv_major3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:text="点击编辑"
+                android:layout_toRightOf="@id/tv_temp_major3"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/next"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_major4"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/tv_temp_major"
+            android:background="@drawable/fx_btn_list_item_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tv_temp_major4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="专业项目4"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <TextView
+                android:gravity="right"
+                android:layout_marginLeft="13dp"
+                android:id="@+id/tv_major4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:text="点击编辑"
+                android:layout_toRightOf="@id/tv_temp_major4"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/next"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#dadada" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_faren"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/fx_btn_list_item_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tv_temp_faren"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="法定代表人"
+                android:textColor="#AAAAAA"
+                android:textSize="16dp" />
+
+            <TextView
+                android:gravity="right"
+                android:layout_marginLeft="13dp"
+                android:id="@+id/tv_faren"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@id/tv_temp_faren"
+                android:ellipsize="end"
+                android:text="点击编辑"
+                android:textColor="#AAAAAA"
+                android:textSize="14dp" />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/next"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#dadada" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_zhizhao"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/fx_btn_list_item_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tv_temp_zhizhao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="企业工商执照号"
+                android:textColor="#AAAAAA"
+                android:textSize="16dp" />company
+
+            <TextView
+                android:gravity="right"
+                android:layout_marginLeft="13dp"
+                android:id="@+id/tv_zhizhao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:text="点击编辑"
+                android:layout_toRightOf="@id/tv_temp_zhizhao"
+                android:ellipsize="end"
+                android:textColor="#AAAAAA"
+                android:textSize="14dp" />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/next"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#dadada" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_phone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/fx_btn_list_item_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tv_temp_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="企业联系方式"
+                android:textColor="#AAAAAA"
+                android:textSize="16dp" />
+
+            <TextView
+                android:gravity="right"
+                android:layout_marginLeft="13dp"
+                android:id="@+id/tv_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@id/tv_temp_phone"
+                android:text="点击编辑"
+                android:ellipsize="end"
+                android:textColor="#AAAAAA"
+                android:textSize="14dp" />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/next"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#dadada" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_company_address"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/fx_btn_list_item_bg"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tv_temp_company_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="公司地址"
+                android:textColor="#353535"
+                android:textSize="16dp" />company
+
+            <TextView
+                android:gravity="right"
+                android:layout_marginLeft="13dp"
+                android:id="@+id/tv_company_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@id/tv_temp_company_address"
+                android:text="点击编辑"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/next"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>>
+
+</ScrollView>

@@ -1,0 +1,882 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ebebeb"
+    android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ebebeb"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#f7f7f7" >
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:onClick="back"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fx_top_bar_back" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:layout_toRightOf="@+id/iv_back"
+                android:textColor="@color/gray"
+                android:text="返回"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:text="发布生活动态"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp" >
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/rl_locationDynamicType"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:text="选择类型:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/tv_play"
+                    android:gravity="center"
+                    android:background="@drawable/btn_stroke_weizhillightgery"
+                    android:textSize="9dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:text="玩"
+                    android:textColor="@color/light_grey"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_store"
+                    android:gravity="center"
+                    android:background="@drawable/btn_stroke_weizhillightgery"
+                    android:textSize="9dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/tv_play"
+                    android:text="店"
+                    android:textColor="@color/light_grey"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:background="#E6E6E6"
+                    android:layout_marginBottom="3dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:background="#fff"
+                android:gravity="top|left"
+                android:hint="这一刻的想法"
+                android:textColor="#353535"
+                android:textSize="16dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginRight="10dip"
+                android:background="#E6E6E6" />
+            <RelativeLayout
+                android:id="@+id/re_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/fx_btn_list_item_bg">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler"
+                    android:layout_below="@+id/tv_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:overScrollMode="never" />
+                <FrameLayout
+                    android:id="@+id/fl_video"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <VideoView
+                        android:id="@+id/uVideoView"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center|left"
+                        android:layout_marginLeft="15dp"/>
+                </FrameLayout>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginRight="10dip"
+                android:background="#E6E6E6" />
+            <LinearLayout
+                android:id="@+id/ll_location"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:ellipsize="middle"
+                    android:maxLines="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:text="选 择 地 点"
+                    android:textColor="@color/gray"
+                    android:textSize="16dp" />
+                <EditText
+                    android:id="@+id/et_location"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:hint="点击选择坐标"
+                    android:gravity="center"
+                    android:drawableRight="@drawable/next"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_baozang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#E6E6E6" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_switch_baozang"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="设 置 宝 藏"
+                        android:textColor="@color/gray"
+                        android:textSize="16dp"
+                        android:typeface="serif" />
+
+                    <com.fanxin.easeui.widget.EaseSwitchButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/switch_baozang"
+                        app:switchStatus="close"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#E6E6E6" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_baozang"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_jine"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="宝藏总金额"
+                            android:textColor="@color/gray"
+                            android:textSize="16dp"
+                            android:typeface="serif" />
+
+                        <EditText
+                            android:id="@+id/et_baocang_jine"
+                            android:layout_marginLeft="110dp"
+                            android:hint="设置宝藏总金额"
+                            android:textSize="15dp"
+                            android:textColor="@color/gray"
+                            android:gravity="left|bottom"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/login_input"/>
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/textv1"
+                        android:layout_below="@+id/rl_jine"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:layout_marginRight="10dip"
+                        android:background="#E6E6E6" />
+                    <RelativeLayout
+                        android:id="@+id/rl_shuliang"
+                        android:layout_below="@+id/textv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dip"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="单 个 金 额 "
+                            android:textColor="@color/gray"
+                            android:textSize="16dp"
+                            android:typeface="serif" />
+
+                        <EditText
+                            android:id="@+id/et_baocang_shul"
+                            android:layout_marginLeft="110dp"
+                            android:textSize="15dp"
+                            android:hint="设置单个宝藏金额"
+                            android:textColor="@color/gray"
+                            android:gravity="left|bottom"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/login_input"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textv2"
+                        android:layout_below="@+id/rl_shuliang"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:layout_marginRight="10dip"
+                        android:background="#E6E6E6" />
+                    <RelativeLayout
+                        android:id="@+id/rl_tupian"
+                        android:layout_below="@+id/textv2"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="解 密 图 片 "
+                            android:textColor="@color/gray"
+                            android:textSize="16dp"
+                            android:typeface="serif" />
+
+                        <ImageView
+                            android:id="@+id/iv_bz_tupian"
+                            android:layout_marginLeft="110dp"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:scaleType="fitXY"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/fx_icon_add"/>
+                        <ImageView
+                            android:id="@+id/iv_del"
+                            android:visibility="gone"
+                            android:layout_alignRight="@+id/iv_bz_tupian"
+                            android:layout_alignTop="@+id/iv_bz_tupian"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="center"
+                            android:src="@drawable/delet_zhaopian_1x" />
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/textv3"
+                        android:layout_below="@+id/rl_tupian"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:layout_marginRight="10dip"
+                        android:background="#E6E6E6" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_shh_A_xw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:id="@+id/rl_switch_allpeople"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="所有人可见"
+                        android:textColor="@color/gray"
+                        android:textSize="16dp"
+                        android:typeface="serif" />
+
+                    <com.fanxin.easeui.widget.EaseSwitchButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/switch_allpeople"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#E6E6E6" />
+                <RelativeLayout
+                    android:id="@+id/rl_switch_onlyFriend"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="仅好友可见"
+                        android:textColor="@color/gray"
+                        android:textSize="16dp"
+                        android:typeface="serif" />
+
+                    <com.fanxin.easeui.widget.EaseSwitchButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/switch_onlyFriend"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/textview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#E6E6E6" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_switch_onlyMyself"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="仅自己可见"
+                        android:textColor="@color/gray"
+                        android:textSize="16dp"
+                        android:typeface="serif" />
+
+                    <com.fanxin.easeui.widget.EaseSwitchButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/switch_onlyMyself"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/textview7"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginRight="10dip"
+                    android:background="#E6E6E6" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_shy_A_yh"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:id="@+id/tv_linktitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="15dp"
+                        android:textColor="@color/light_grey"
+                        android:text="链    接:"/>
+
+                    <EditText
+                        android:id="@+id/et_linkUrl"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:gravity="left|center"
+                        android:hint="店铺或者商品链接(选填)"
+                        android:textSize="15dp"
+                        android:background="@null"
+                        android:layout_toRightOf="@+id/tv_linktitle"
+                        android:layout_height="40dp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="#E6E6E6" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:id="@+id/tv_shangpin_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="15dp"
+                        android:textColor="@color/light_grey"
+                        android:text="线上价:"/>
+                    <EditText
+                        android:id="@+id/et_shpjg"
+                        android:layout_width="100dp"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="number"
+                        android:textSize="15dp"
+                        android:background="@null"
+                        android:layout_toRightOf="@+id/tv_shangpin_title"
+                        android:layout_height="40dp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_offlinetitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_toRightOf="@+id/et_shpjg"
+                        android:textSize="16dp"
+                        android:textColor="@color/light_grey"
+                        android:layout_marginLeft="25dp"
+                        android:text="线下价:"/>
+                    <EditText
+                        android:id="@+id/et_shpxj"
+                        android:layout_width="100dp"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="number"
+                        android:textSize="16dp"
+                        android:background="@null"
+                        android:layout_toRightOf="@+id/tv_offlinetitle"
+                        android:layout_height="40dp" />
+
+
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/textview6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="#E6E6E6" />
+                <RelativeLayout
+                    android:id="@+id/rl_shpxj"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:id="@+id/tv_remark"
+                        android:textSize="13dp"
+                        android:gravity="center"
+                        android:textColor="@color/orange"
+                        android:text="设置转发奖励红包、激烈分享、提高曝光"
+                        android:layout_centerHorizontal="true"
+                        android:paddingRight="35dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/tv_circle"
+                        android:layout_alignRight="@+id/tv_remark"
+                        android:layout_marginRight="10dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/btn_stroke_grey20"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp" />
+
+                    <TextView
+                        android:id="@+id/tv_identify"
+                        android:visibility="invisible"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_alignTop="@+id/tv_circle"
+                        android:layout_alignLeft="@+id/tv_circle"
+                        android:background="@drawable/btn_corner_orange"
+                        android:layout_width="6dp"
+                        android:layout_height="6dp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textview4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="#E6E6E6" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_hongbao"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <TextView
+                        android:id="@+id/tv_allredtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="16dp"
+                        android:textColor="@color/light_grey"
+                        android:text="总红包:"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_redcounttitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="16dp"
+                        android:layout_toRightOf="@+id/et_hbjg"
+                        android:layout_marginLeft="25dp"
+                        android:textColor="@color/light_grey"
+                        android:text="红包量:"/>
+                    <EditText
+                        android:id="@+id/etzhfjg"
+                        android:layout_width="100dp"
+                        android:gravity="center"
+                        android:hint="0"
+                        android:inputType="number"
+                        android:textSize="15dp"
+                        android:background="@null"
+                        android:layout_toRightOf="@+id/tv_redcounttitle"
+                        android:layout_height="40dp" />
+
+                    <EditText
+                        android:id="@+id/et_hbjg"
+                        android:layout_width="100dp"
+                        android:gravity="center"
+                        android:hint="0.00"
+                        android:inputType="number"
+                        android:textSize="15dp"
+                        android:background="@null"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/tv_allredtitle" />
+
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/textview5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="#E6E6E6" />
+                <LinearLayout
+                    android:id="@+id/rl_zhfjine"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:id="@+id/tv_location2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:ellipsize="middle"
+                        android:maxLines="1"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left"
+                        android:text="地   址"
+                        android:textColor="@color/gray"
+                        android:textSize="16dp" />
+                    <EditText
+                        android:id="@+id/et_location2"
+                        android:textSize="15dp"
+                        android:textColor="#000"
+                        android:hint="点击选择地址"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:background="@null"
+                        android:singleLine="true"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="40dp" />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/textview8"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="#E6E6E6" />
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp">
+                    <TextView
+                        android:id="@+id/tv_xiadanmoshi"
+                        android:background="#fff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:text=""
+                        android:textColor="#000"
+                        android:textSize="16dp" />
+
+                    <HorizontalScrollView
+                        android:layout_toRightOf="@+id/tv_xiadanmoshi"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:scrollbars="none">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/rl_moshiyi"
+                                android:layout_width="60dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp">
+                                <ImageView
+                                    android:id="@+id/iv_moshiyi"
+                                    android:layout_width="60dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:scaleType="fitXY"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"/>
+                                <CheckBox
+                                    android:id="@+id/cb_moshiyi"
+                                    android:layout_marginTop="-5dp"
+                                    android:layout_marginRight="-5dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_width="wrap_content"
+                                    android:checked="true"
+                                    android:scaleX="0.5"
+                                    android:scaleY="0.5"
+                                    android:layout_height="wrap_content"/>
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:id="@+id/rl_moshier"
+                                android:layout_width="60dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp">
+                                <ImageView
+                                    android:id="@+id/iv_moshier"
+                                    android:layout_width="60dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:scaleType="fitXY"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"/>
+                                <CheckBox
+                                    android:id="@+id/cb_moshier"
+                                    android:layout_marginTop="-5dp"
+                                    android:layout_marginRight="-5dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_width="wrap_content"
+                                    android:scaleX="0.5"
+                                    android:scaleY="0.5"
+                                    android:layout_height="wrap_content"/>
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:id="@+id/rl_moshisan"
+                                android:layout_width="60dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp">
+
+                                <ImageView
+                                    android:id="@+id/iv_moshisan"
+                                    android:layout_width="60dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:scaleType="fitXY"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"/>
+                                <CheckBox
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginRight="-5dp"
+                                    android:layout_marginTop="-5dp"
+                                    android:id="@+id/cb_moshisan"
+                                    android:layout_width="wrap_content"
+                                    android:scaleX="0.5"
+                                    android:scaleY="0.5"
+                                    android:layout_height="wrap_content"/>
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:id="@+id/rl_moshisi"
+                                android:layout_width="60dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp">
+
+                                <ImageView
+                                    android:id="@+id/iv_moshisi"
+                                    android:layout_width="60dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:scaleType="fitXY"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"/>
+                                <CheckBox
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginRight="-5dp"
+                                    android:layout_marginTop="-5dp"
+                                    android:id="@+id/cb_moshisi"
+                                    android:layout_width="wrap_content"
+                                    android:scaleX="0.5"
+                                    android:scaleY="0.5"
+                                    android:layout_height="wrap_content"/>
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:id="@+id/rl_moshiwu"
+                                android:layout_width="60dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="10dp">
+
+                                <ImageView
+                                    android:id="@+id/iv_moshiwu"
+                                    android:layout_width="60dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:scaleType="fitXY"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"/>
+                                <CheckBox
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginRight="-5dp"
+                                    android:layout_marginTop="-5dp"
+                                    android:id="@+id/cb_moshiwu"
+                                    android:layout_width="wrap_content"
+                                    android:scaleX="0.5"
+                                    android:scaleY="0.5"
+                                    android:layout_height="wrap_content"/>
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_fenxiang"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="50dip">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="是否分享"
+                    android:textSize="16dp"
+                    android:textColor="@color/gray"
+                    android:typeface="serif" />
+
+                <com.fanxin.easeui.widget.EaseSwitchButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:id="@+id/switch_fenxiang"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <Button
+                    android:id="@+id/btn_send"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_height="38dp"
+                    android:background="@drawable/fx_bg_btn_green"
+                    android:gravity="center"
+                    android:text="发    布"
+                    android:textColor="#fff"
+                    android:textSize="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

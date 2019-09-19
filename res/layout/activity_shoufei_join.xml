@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#f7f7f7" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fx_top_bar_back" />
+
+        <TextView
+            android:id="@+id/tvback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@id/iv_back"
+            android:text="我的企业"
+            android:textColor="@color/gray"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="企业设置"
+            android:textColor="#000"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btn_queren"
+            android:visibility="invisible"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/fx_bg_btn_green"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="14dp"
+            android:textColor="#fff"
+            android:text="完成"/>
+        <TextView
+            android:id="@+id/tv_wancheng"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="完成"
+            android:textColor="@color/accent_blue"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/re_qiye_yincang"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/fx_btn_list_item_bg"
+        android:clickable="true"
+        >
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/bianhao_one"/>
+        <TextView
+            android:layout_toRightOf="@+id/iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="10dp"
+            android:text="隐藏企业人数"
+            android:layout_centerVertical="true"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:id="@+id/textView13" />
+        <TextView
+            android:id="@+id/tv_yincang"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:text="不隐藏"
+            android:textSize="16dp"
+            android:textColor="@color/gray"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="1dp"
+        android:id="@+id/re_qiye_zhaopin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/fx_btn_list_item_bg"
+        android:clickable="true"
+        >
+        <ImageView
+            android:id="@+id/iv12"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/bianhao_two"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="招聘编辑"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="10dp"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv12"
+            android:id="@+id/textView1" />
+        <TextView
+            android:id="@+id/tv_zhaopin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:text="已设置"
+            android:textSize="16dp"
+            android:textColor="@color/gray"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="1dp"
+        android:id="@+id/re_qiye_jiameng"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/fx_btn_list_item_bg"
+        android:clickable="true"
+        >
+        <ImageView
+            android:id="@+id/iv13"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="12dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/bianhao_three"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加盟编辑"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="10dp"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv13"
+            android:id="@+id/textView2" />
+        <TextView
+            android:id="@+id/tv_jiameng"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:text="已设置"
+            android:textSize="16dp"
+            android:textColor="@color/gray"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_about"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="关于我们"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="1dp"
+        android:id="@+id/rl_switch_hongbao"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="50dip"
+        android:background="#fff"
+        android:padding="10dip">
+
+        <TextView
+            android:id="@+id/tv_hongbao_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="设置分享红包"
+            android:textColor="#AAAAAA"
+            android:textSize="16dp"
+            android:typeface="serif" />
+
+        <com.fanxin.easeui.widget.EaseSwitchButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch_hongbao"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_hongbao_yue"
+        android:visibility="gone"
+        android:background="#fff"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tv_hongbao_yue"
+            android:layout_toRightOf="@+id/tv_hongbao"
+            android:layout_width="wrap_content"
+            android:gravity="center|left"
+            android:layout_marginLeft="5dp"
+            android:text="￥0.00"
+            android:textColor="#000"
+            android:textSize="16dp"
+            android:layout_height="40dp" />
+        <Button
+            android:id="@+id/btn_tiqu"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:text="取出余额"
+            android:textSize="14dp"
+            android:textColor="#fff"
+            android:background="@drawable/fx_bg_btn_green"/>
+
+        <TextView
+            android:id="@+id/tv_hongbao"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:text="红  包  余  额："
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/tv_hongbao_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/gray"
+            android:text="设置红包金额"/>
+        <EditText
+            android:id="@+id/et_hongbao_jg"
+            android:layout_toRightOf="@+id/tv_hongbao_title"
+            android:layout_width="150dp"
+            android:gravity="center|left"
+            android:layout_marginLeft="10dp"
+            android:hint="请输入"
+            android:textColorHint="@color/gray"
+            android:inputType="number"
+            android:textSize="16dp"
+            android:background="@drawable/login_input"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/tv_each_jine"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/gray"
+            android:text="每次分享金额"/>
+        <EditText
+            android:id="@+id/et_each_jg"
+            android:layout_toRightOf="@+id/tv_each_jine"
+            android:layout_width="150dp"
+            android:gravity="center|left"
+            android:layout_marginLeft="10dp"
+            android:hint="请输入"
+            android:textColorHint="@color/gray"
+            android:inputType="number"
+            android:textSize="16dp"
+            android:background="@drawable/login_input"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+    <TextView
+        android:visibility="gone"
+        android:layout_marginTop="1dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@color/accent_oriange"
+        android:text="注：分享红包是当其他用户在分享您个人详情的同时会获取您设置的红包"/>
+
+</LinearLayout>

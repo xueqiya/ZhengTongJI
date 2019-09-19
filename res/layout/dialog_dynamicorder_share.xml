@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/btn_corner_white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_firstTitle"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:text="最佳接单方案"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_marginTop="8dp"
+        android:textSize="13dp"
+        android:textAlignment="center"
+        android:text="VIP主动精准接单报价及时"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="8dp"
+        android:textSize="13dp"
+        android:textAlignment="center"
+        android:text="点亮质保，客户有保障"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="8dp"
+        android:textSize="13dp"
+        android:textAlignment="center"
+        android:text="开主动接单，快人一步"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:visibility="invisible"
+            android:id="@+id/bt_message"
+            android:background="@drawable/btn_stroke_red"
+            android:textColor="@color/red"
+            android:text="开通派单"
+            android:textSize="12dp"
+            android:layout_centerInParent="true"
+            android:layout_width="65dp"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/bt_vip"
+            android:background="@drawable/btn_stroke_red"
+            android:textColor="@color/red"
+            android:text="主动接单"
+            android:textSize="12dp"
+            android:layout_toRightOf="@id/bt_message"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:layout_width="65dp"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/bt_margin"
+            android:background="@drawable/btn_stroke_red"
+            android:textColor="@color/red"
+            android:text="点亮质保"
+            android:textSize="12dp"
+            android:layout_toLeftOf="@id/bt_message"
+            android:layout_marginRight="8dp"
+
+            android:layout_centerVertical="true"
+            android:layout_width="65dp"
+            android:layout_height="20dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:textSize="10dp"
+        android:textAlignment="center"
+        android:text="无竞价排名·直接见单·不抽成·成本可控"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_secondTitle"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:text="免费接单方案"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:textSize="14dp"
+        android:textAlignment="center"
+        android:text="分享 后 查看"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:visibility="gone"
+        android:layout_marginTop="8dp"
+        android:textSize="13dp"
+        android:textAlignment="center"
+        android:text="推荐给能接单的人"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="16dp"
+        android:textSize="14dp"
+        android:textAlignment="center"
+        android:text="互帮互助，共推共享"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:textSize="14dp"
+        android:textAlignment="center"
+        android:text="提高本地区派单密度"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView26" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_marginTop="8dp"
+        android:textSize="14dp"
+        android:textColor="@color/orange"
+        android:textAlignment="center"
+        android:text="直接接单 或 帮客户介绍"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView27" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_wxcricle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <com.sangu.apptongji.widget.CircleImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/sdv_wxcircle"
+                android:src="@drawable/weixin_moment"
+                android:layout_marginTop="15dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/sdv_wxcircle"
+                android:layout_centerHorizontal="true"
+                android:text="朋友圈"
+                android:textSize="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r2_qzone"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginTop="0dp"
+                android:layout_below="@+id/sdv_qzone"
+                android:layout_centerHorizontal="true"
+                android:text="QQ好友"
+                android:textSize="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.sangu.apptongji.widget.CircleImageView
+                android:id="@+id/sdv_qzone"
+                android:src="@drawable/qq_friend"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r3_wxchat"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <com.sangu.apptongji.widget.CircleImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/sdv_wxchat"
+                android:src="@drawable/weixin"
+                android:layout_marginTop="15dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/sdv_wxchat"
+                android:layout_centerHorizontal="true"
+                android:text="微信好友"
+                android:textSize="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="12dp"
+        android:textColor="@color/orange"
+        android:textAlignment="center"
+        android:text="VIP帮推荐  分享后  有红包"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

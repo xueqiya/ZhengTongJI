@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#f7f7f7">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fx_top_bar_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="关于正事多"
+            android:textColor="@color/gray"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_back"
+            android:text="关于我们"
+            android:textColor="@color/gray"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_helpto_use"
+        android:text="作用与用途:"
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:clickable="true"
+        android:layout_marginLeft="15dp"
+        android:gravity="center|left"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_marginTop="10dp"
+        android:text="正经的工作，需要一个办“正事多”的工具，帮助我们，商务交流、通讯、交易、记录、财务、管理、定位签到、地图、打造品牌、营销推广、坦荡从容的正面营销，光明正大的用【正事多】"
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:clickable="true"
+        android:layout_marginLeft="15dp"
+        android:gravity="center|left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_marginTop="10dp"
+        android:text="国内首创针对“专业交易模式”的移动APP，每一个行业内的每个品牌，每个人都有自己的专业领域，交易本就是人与人的交易，看的也是人的专业与品牌文化。"
+        android:textColor="#000"
+        android:clickable="true"
+        android:textSize="18dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center|left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

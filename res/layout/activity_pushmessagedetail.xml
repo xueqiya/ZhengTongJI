@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:visibility="visible"
+        android:background="#f7f7f7">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fx_top_bar_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="附近用户"
+            android:textColor="@color/gray"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_back"
+            android:text="返回"
+            android:textColor="@color/gray"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_sendClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="发送"
+            android:textColor="@color/blue"
+            android:layout_marginRight="30dp"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_allcount"
+            android:text="一共0条数据"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_marginCount"
+            android:layout_below="@+id/tv_allcount"
+            android:text="有质保的共0人"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_distance"
+            android:textSize="12dp"
+            android:hint="距离"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_marginCount"
+            android:layout_width="200dp"
+            android:layout_height="35dp" />
+
+        <EditText
+            android:id="@+id/et_keyworld"
+            android:textSize="12dp"
+            android:hint="关键词"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/et_distance"
+            android:layout_width="200dp"
+            android:layout_height="35dp" />
+
+        <TextView
+            android:id="@+id/tv_clean"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/blue"
+            android:text=" 清除"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_again"
+            android:layout_marginTop="90dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/blue"
+            android:text=" 再搜"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:background="@color/light_grey"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:background="#fff"
+        android:divider="#DADADA"
+        android:dividerHeight="0.1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </ListView>
+
+
+
+</LinearLayout>

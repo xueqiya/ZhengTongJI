@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="#fff"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#f7f7f7" >
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:onClick="back"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fx_top_bar_back" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/iv_back"
+                android:text="返回"
+                android:textColor="@color/gray"
+                android:textSize="18dp" />
+
+            <TextView
+                android:text="软件使用协议"
+                android:textSize="20dp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:textColor="@color/black_deep"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="法律声明
+访问、浏览或使用正事多平台以下统称“正事多”，表明您已阅读、理解并同意接受以下条款的约束，并遵守所有适用的法律和法规。您一旦使用正事多，则须秉着诚信的原则遵守以下条款。"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/light_grey"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="法律声明
+\n访问、浏览或使用正事多平台以下统称“正事多”，表明您已阅读、理解并同意接受以下条款的约束，并遵守所有适用的法律和法规。您一旦使用正事多，则须秉着诚信的原则遵守以下条款。
+ \n
+\n一般原则
+\n以下规则适用于所有正事多用户或浏览者，因业务政策调整，可能随时被修改。您应经常访问本页面以了解当前的条款，因为这些条款与您密切相关。这些条款的某些条文也可能被在正事多平台中某些页面上或某些具体服务明确
+\n指定的法律通告或条款所取代，您应该了解这些内容，一旦接受本条款，即意味着您已经同时详细阅读并接受了这些被引用用或取代的条款。
+\n
+\n权利说明
+\n正事多对其发行的或与合作人公司共同发行的包括但不限于提供的软件及相关产品或服务的全部内容，享有知识产权，受法律保护。如果相关内容未含权利声明，并不代表正事多对其不享有权利和不主张权利，您应根据法律、法
+\n规及诚信原则尊重权利人的合法权益并合法使用该内容。
+\n未经正事多书面许可，任何单位及个人不得以任何方式或理由对,上述软件、产品、服务、信息、文字的任何部分进行使用、复制、修改、抄录、传播或与其它产品捆绑使用、销售，或以超级链路连接或传送、存储于信息检索系统
+\n或者其他任何商业目的的使用，但对于非商业目的的、个人使用的下载或打印(未作修改，且须保留该内容中的版权说明或其他所有权的说明)除外。
+\n上述软件中使用和显示的商标和标识(以下统称“商标”)是正事多及其关联公司在相关服务及其它相关领域内注册和未注册的有关商标，受法律保护。该等软件中所载的任何内容，未经正事多书面许可，任何人不得以任何方式使
+\n用正事多、及近似名称和相关商标、标识。
+\n
+\n用户信息
+\n为正事多提供相应服务之必须，您需要仔细阅读“正事多”《个人信息保护及隐私政策》，并授权正事多按照《个人信息保护及隐私政策》的约定使用您的个人信息。同时，为能更好的给您提供网络服务，以最便利、最全面的实
+\n现您的多方位需求，正事多与其合作网络服务平台、接单全、附近师傅、抢单派活、招标大全等平台提供互补性服务，为实现该服务功能的正常运行，正事多与合作平台在用户同意的情况下将共享必要的用户信息。正事多对于共
+\n享用户实行相同的信息安全和用户隐私政策，并监督合作网络服务平台遵守不低于正事多信息安全和用户隐私政策标准的安全和隐私政策。
+\n
+\n责任限制声明
+\n不论在何种情况下，正事多对由于信息网络设备维护、信息网络连接故障、智能终端、通讯或其他系统的故障、电力故障、罢工、劳动争议、暴乱、起义、骚乱、火灾、洪水、风暴、爆炸、战争、政府行为、司法行政机关的命令
+\n、其他不可抗力或第三方的不作为而造成的不能服务或延迟服务不承担责任。
+\n
+\n无论在任何情况下(包括但不限于疏忽原因)，由于使用正事多上的信息或由正事多平台链接的信息，或其他与正事多平台链接的网站信息，对您或他人所造成任何的损失或损害(包括直接、间接、特别或后果性的损失或损害，例如
+\n收入或利润之损失，智能终端系统之损坏或数据丢失等后果)，均由使用者自行承担责任(包括但不限于疏忽责任)。
+\n正事多所载的信息，包括但不限于文本、图片、数据、观点、网页或链接，虽然力图准确和详尽，但正事多并不就其所包含的信息和内容的准确、完整、充分和可靠性做任何承诺。正事多表明不对这些信息和内容的错误或遗漏承
+\n担责任，也不对这些信息和内容作出任何明示或默示的、包括但不限于没有侵犯第三方权利、质量和没有智能终端病毒的保证。
+\n
+\n对于正事平台上所提及或发布展示的产品或服务，正事多仅提供基本信息。正事多不是相关产品的生产者或经销者，亦不是服务的提供方。正事多不就平台上提供的产品或服务做出任何声明或保证，所有展示的产品和服务应受其
+\n本公司或服务提供方所做质量承诺和条款的约束。
+\n
+\n正事多平台服务
+\n正事多平台由基础信息平台业务、功能服务交易信息平台业务，包括但不限于“正事多”其他在线业务共同组成。
+\n“正事多”础信息平台，通过建设平台用户便于交互的软件环境和规则环境，为平台用户和各类功能服务交易信息平台运营商提供基础的信息传输和用户间即时通讯、网络社区治理等基础信息服务，并授权旗下或合作的功能服务
+\n交易信息平台使用正事多的知识产权及基础信息功能，为其用户提供专业性的交易信息平台服务;基础信息平台仅提供线上的信息交互环境、交易环境和必要的信息传输、存储等电信服务业务。
+\n功能服务交易信息平台业务和其他在线业务可在本协议的基础上，另行制定具体的用户服务协议，与您约定具体的服务内容，其中:
+\n“正事多”平台，由郑州绿色三谷科技有限公司为用户提供信息及功能服务。
+\n
+\n第三方链接及服务
+\n正事多可能保留有第三方网站或网址的链接及第三方服务，是否访问这些链接或接受相应服务将由用户自己作出决定，正事多并不就这些链接上所提供的任何信息、数据、观点、图片、陈述或建议的准确性、完整性、充分性和可
+\n靠性提供承诺或保证。正事多没有审查过任何第三方网站，对这些网站及其内容不进行控制，也不负任何责任。如果您决定访问任何与本站链接的第三方网站，其可能带来的结果和风险全部由您自己承担。
+\n
+\n适用法律和管辖权
+\n通过访问正事多平台使用正事多提供的或其合作服务提供商提供的服务,即表示您同意该访问或服务受中华人民共和国法律的约束，且您同意受中华人民共和国法院的管辖。访问或接受服务过程中发生的争议应当协商解决，协商不
+\n成的，由实际服务提供者或实际网络信息服务提供者住所地有管辖权的法院诉讼解决。
+\n
+\n保险和保障说明
+\n正事多为其用户提供了保险和安全保障，具体保障内容以相应服务准则为准。
+"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+
+
+
+</ScrollView>

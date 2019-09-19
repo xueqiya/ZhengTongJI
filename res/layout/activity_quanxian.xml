@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#f7f7f7" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fx_top_bar_back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:layout_toRightOf="@+id/iv_back"
+            android:textColor="@color/gray"
+            android:text="返回"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:text="选择动态权限"/>
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="48dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/fx_bg_btn_green"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#fff"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_switch_allpeople"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/em_btn_bottom_selector"
+        android:padding="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="所有人可见"
+            android:textColor="@color/gray"
+            android:textSize="16dp"
+            android:typeface="serif" />
+
+        <com.fanxin.easeui.widget.EaseSwitchButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch_allpeople"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="#E6E6E6" />
+    <RelativeLayout
+        android:id="@+id/rl_switch_onlyFriend"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/em_btn_bottom_selector"
+        android:padding="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="仅好友可见"
+            android:textColor="@color/gray"
+            android:textSize="16dp"
+            android:typeface="serif" />
+
+        <com.fanxin.easeui.widget.EaseSwitchButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch_onlyFriend"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="#E6E6E6" />
+    <RelativeLayout
+        android:id="@+id/rl_switch_onlyMyself"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/em_btn_bottom_selector"
+        android:padding="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="仅自己可见"
+            android:textColor="@color/gray"
+            android:textSize="16dp"
+            android:typeface="serif" />
+
+        <com.fanxin.easeui.widget.EaseSwitchButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch_onlyMyself"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_fenxiang"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/em_btn_bottom_selector"
+        >
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="是否分享"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:typeface="serif" />
+
+        <com.fanxin.easeui.widget.EaseSwitchButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:id="@+id/switch_fenxiang"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

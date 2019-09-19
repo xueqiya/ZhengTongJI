@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#f7f7f7">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fx_top_bar_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_back"
+            android:text="看列表"
+            android:textColor="@color/gray"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择位置"
+            android:textSize="18dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/gray"/>
+
+        <TextView
+            android:id="@+id/tv_sousuo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/blue"
+            android:textSize="18dp"
+            android:clickable="true"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:background="#fff"
+            android:layout_marginBottom="30dp"/>
+
+        <ImageView
+            android:id="@+id/iv_mylocation"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_above="@+id/tv_bottom"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:scaleType="centerInside"
+            android:background="@drawable/fx_bg_text_white"
+            android:src="@drawable/gps_mylocation"/>
+        <TextView
+            android:id="@+id/tv_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:background="@color/accent_blue"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:text="【正事多】智能商务接单考勤APP"/>
+
+        <com.sangu.apptongji.main.widget.CompassView
+            android:id="@+id/iv_mylocation_big"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:visibility="gone"
+            android:scaleType="fitXY"
+            android:src="@drawable/luopan"
+            android:layout_above="@+id/tv_bottom"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

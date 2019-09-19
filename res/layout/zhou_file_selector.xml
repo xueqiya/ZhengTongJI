@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:id="@+id/zhou_file_head"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:id="@+id/zhou_file_title"
+            android:textSize="24dp"
+            android:layout_height="54dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/zhou_list_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:choiceMode="singleChoice"
+            android:id="@+id/zhou_file_listView"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:id="@+id/zhou_file_hit_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/zhou_file_hit_bar_icon"
+                android:layout_width="50dp"
+                android:background="@drawable/unselect_btn"
+                android:layout_height="50dp"/>
+            <TextView
+                android:id="@+id/zhou_file_hit_bar_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/zhou_file_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/zhou_file_cancel_btn"
+            android:text="取消"
+            android:background="@drawable/button_bg"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/zhou_file_confirm_btn"
+            android:text="确定"
+            android:background="@drawable/button_bg"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

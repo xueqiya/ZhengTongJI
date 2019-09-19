@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/fx_bg_btn_white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:text="首次质保展示功能免费"
+        android:textSize="17dp"
+        android:textColor="@color/dark_red"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:text="充提不收手续费功能费"
+        android:textSize="17dp"
+        android:textColor="@color/dark_red"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:text="质保是一种诚信度展示 可提取"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="8dp"
+        android:text="与微信实名认证不一致"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="8dp"
+        android:text="会影响质保提现"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_marginAmt"
+        android:layout_marginTop="35dp"
+        android:text="为客户提供100元承诺保障"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:text="诚信服务、保证质量、保障售后"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:text="对客户造成损失时愿意合理赔偿"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:background="@drawable/fx_bg_btn_red"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="确认"
+            android:layout_width="160dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_agreen" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

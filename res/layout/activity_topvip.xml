@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="#f7f7f7">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fx_top_bar_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="开通会员"
+            android:textColor="#000"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_back"
+            android:text="返回"
+            android:textColor="@color/gray"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="#fff"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_advert"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:visibility="gone"
+                android:src="@drawable/vipalert"
+                android:layout_width="match_parent"
+                android:layout_height="180dp" />
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:id="@+id/tv_viptime"
+                    android:layout_centerInParent="true"
+                    android:textSize="17dp"
+                    android:textColor="@color/dark_red"
+                    android:text="主动接单"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:background="@color/light_grey"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <TextView
+                    android:id="@+id/image_vip1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text=""
+                    android:background="@drawable/vip1"
+                    android:gravity="center"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp" />
+
+                <TextView
+                    android:textSize="12dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/image_vip1"
+                    android:text="筛查50km内的100元以下的订单"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="12dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/image_vip1"
+                    android:text="适合近距离接小活的及时报价接单"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:id="@+id/tv_top"
+                    android:background="@drawable/fx_bg_btn_green"
+                    android:textColor="@color/white"
+                    android:text="￥15"
+                    android:layout_width="58dp"
+                    android:layout_height="26dp" />
+                <TextView
+                    android:visibility="gone"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="精准度提升80%"
+                    android:background="@color/green"
+                    android:layout_marginBottom="5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="87dp"
+                    android:layout_height="18dp" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="覆盖率提升10%"
+                    android:background="@color/orange"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="87dp"
+                    android:layout_height="18dp" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="派单流失率60%"
+                    android:background="@color/blue"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="87dp"
+                    android:layout_height="18dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:background="@color/light_grey"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <TextView
+                    android:id="@+id/image_vip2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text=""
+                    android:background="@drawable/vip2"
+                    android:gravity="center"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp" />
+
+                <TextView
+                    android:textSize="12dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/image_vip2"
+                    android:text="筛查100km内的1000元以下的订单"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="12dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/image_vip2"
+                    android:text="接单范围在100km以内的及时接单报价"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginRight="12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:id="@+id/tv_top2"
+                    android:background="@drawable/fx_bg_btn_green"
+                    android:textColor="@color/white"
+                    android:text="￥36"
+                    android:layout_width="58dp"
+                    android:layout_height="26dp" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="精准度提升80%"
+                    android:background="@color/green"
+                    android:layout_marginBottom="5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="87dp"
+                    android:layout_height="18dp" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="覆盖率提升30%"
+                    android:background="@color/orange"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="87dp"
+                    android:layout_height="18dp" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="派单流失率50%"
+                    android:background="@color/blue"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="87dp"
+                    android:layout_height="18dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:background="@color/light_grey"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <TextView
+                    android:id="@+id/image_vip3"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text=""
+                    android:background="@drawable/vip3"
+                    android:gravity="center"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp" />
+
+                <TextView
+                    android:textSize="12dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/image_vip3"
+                    android:text="筛查全国范围的全部订单"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="12dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/image_vip3"
+                    android:text="对全国范围的派单及时接单报价"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginRight="12dp"
+                    android:gravity="center"
+                    android:id="@+id/tv_top3"
+                    android:background="@drawable/fx_bg_btn_green"
+                    android:textColor="@color/white"
+                    android:text="￥66"
+                    android:layout_width="58dp"
+                    android:layout_height="26dp"
+                    android:layout_alignTop="@+id/image_vip3"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="精准度提升80%"
+                    android:background="@color/green"
+                    android:layout_marginBottom="5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="87dp"
+                    android:layout_height="18dp" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="覆盖率提升40%"
+                    android:background="@color/orange"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="87dp"
+                    android:layout_height="18dp" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="派单流失率40%"
+                    android:background="@color/blue"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="87dp"
+                    android:layout_height="18dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:background="@color/light_grey"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+
+            <TextView
+                android:textSize="16dp"
+                android:textColor="@color/dark_red"
+                android:text="规则提示："
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="13dp"
+                android:textColor="@color/dark_red"
+                android:text="\n开通后，分享推荐可以获得红包\n\n开通会员功能可以更及时查看全国范围的派单详细信息，坐标、报价、详情图片等，不用分享及时查看，更有效的把握订单，第一时间接触客户\n\n一次开通一个月，会员功能一经开通\n不予退订退款，请根据个人账号接单行业，查看一个月订单是否划算后再进行操作"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

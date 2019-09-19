@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/fx_bg_btn_white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_flow"
+        android:background="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/tv_flow"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:text=">>>"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/tv_frist"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_stroke_white"
+            android:textColor="@color/white"
+            android:text="1、沟通确认"
+            android:layout_toLeftOf="@+id/tv_flow"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_second"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_flow"
+            android:background="@drawable/btn_stroke_white"
+            android:textColor="@color/white"
+            android:text=" 2、下单验资 "
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_alignLeft="@+id/tv_second"
+            android:layout_below="@+id/tv_second"
+            android:background="@drawable/btn_stroke_white"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:text="干不好就退款"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_alignLeft="@+id/tv_second"
+            android:layout_above="@+id/tv_second"
+            android:background="@drawable/btn_stroke_white"
+            android:textColor="@color/white"
+            android:text="干好签字验收"
+            android:layout_marginBottom="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textColor="@color/dark_red"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:text="重点提示"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_alert2"
+            android:layout_below="@+id/tv_alert1"
+            android:layout_alignLeft="@+id/tv_alert1"
+            android:text="第二：线上交易，形成电子单据，有保障"
+            android:textColor="@color/light_grey"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_alert3"
+            android:layout_below="@+id/tv_alert2"
+            android:layout_alignLeft="@+id/tv_alert2"
+            android:text="第三：活不干好，不签收，钱就不到账"
+            android:textColor="@color/light_grey"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_below="@+id/tv_alert3"
+            android:layout_alignLeft="@+id/tv_alert3"
+            android:text="第四：选择有质保的，如造成损失有赔偿"
+            android:textColor="@color/light_grey"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_alert1"
+            android:text="第一：收到报价后先沟通确认，再下单"
+            android:textColor="@color/light_grey"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textColor="@color/dark_red"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:text="重点保障提示"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@color/dark_red"
+        android:text="线上下单交易,形成电子单据"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@color/dark_red"
+        android:text="售后服务能追踪,纠纷能处理"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@color/dark_red"
+        android:text="线下口头交易,不提供保障服务"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <TextView
+            android:id="@+id/tv_agreen"
+            android:textSize="17dp"
+            android:textColor="@color/dark_red"
+            android:gravity="center"
+            android:text="同意"
+            android:background="@drawable/btn_stroke_red"
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+            android:layout_height="35dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

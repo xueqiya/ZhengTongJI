@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#fff">
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_title1"
+                android:text="请  假  人:"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_name"
+                android:text="李辉"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_title2"
+                android:text="请假时间:"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_from"
+                android:text="2017-1-1 10:00"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_zhuangtai"
+            android:text="未批准"
+            android:textSize="16dp"
+            android:textColor="@color/accent_red"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</LinearLayout>

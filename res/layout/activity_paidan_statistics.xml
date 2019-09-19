@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/accent_blue"
+        >
+        <TextView
+        android:id="@+id/tv_padian_count"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="派单 — 次"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:gravity="center"
+        />
+        <TextView
+            android:id="@+id/tv_padian_month"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2月"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/tv_baojia"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="报价 - %"
+            android:background="@color/accent_blue"
+            android:layout_margin="1dp"
+            />
+        <TextView
+            android:id="@+id/tv_chengjiao"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="成交 - %"
+            android:background="@color/accent_blue"
+            android:layout_margin="1dp"
+            />
+        <TextView
+            android:id="@+id/tv_liushi"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="流失 - %"
+            android:background="@color/accent_blue"
+            android:layout_margin="1dp"
+            />
+        <TextView
+            android:id="@+id/tv_chengjiaoe"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="成交额 - %"
+            android:background="@color/accent_blue"
+            android:layout_margin="1dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="-"
+            android:background="@color/accent_blue"
+            android:layout_margin="1dp"
+            />
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text=" - "
+            android:background="@color/accent_blue"
+            android:layout_margin="1dp"
+            />
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text=" -"
+            android:background="@color/accent_blue"
+            android:layout_margin="1dp"
+            />
+        <TextView
+            android:id="@+id/tv_4"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text=" - "
+            android:background="@color/accent_blue"
+            android:layout_margin="1dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="由于接单次数较少无法完成统计图"
+        android:gravity="center"
+        android:textSize="40sp"
+        />
+
+</LinearLayout>

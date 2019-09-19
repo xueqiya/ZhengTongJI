@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/fx_bg_btn_white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:text="重要提示"
+        android:textSize="17dp"
+        android:textColor="@color/dark_red"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:text="不再使用质保展示功能"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="8dp"
+        android:text="提出后将关闭质保功能"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/tv_marginAmt"
+        android:layout_marginTop="30dp"
+        android:text="再次使用需付费申请开通"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:text="首次免费开通"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:text="2次 30元 开通"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:text="3次 99元 开通"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:background="@drawable/fx_bg_btn_red"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="确认"
+            android:layout_width="160dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_agreen" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

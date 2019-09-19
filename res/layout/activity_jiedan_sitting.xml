@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            >
+            <RelativeLayout
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#f7f7f7" >
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:onClick="back"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/fx_top_bar_back" />
+                <TextView
+                    android:id="@+id/tvback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="1dp"
+                    android:layout_toRightOf="@id/iv_back"
+                    android:text="消息"
+                    android:textColor="@color/gray"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:text="接单设置"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tv_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:text="功能介绍"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="@color/accent_blue"
+                    android:layout_marginRight="15dp"/>
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/rl_fanwei"
+                android:layout_below="@+id/title"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_tishi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:text="1.   不接收的:"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/rl_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_toRightOf="@+id/tv_tishi">
+                    <TextView
+                        android:layout_toRightOf="@+id/cb_zhy_ts"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="所有消息"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/textView18" />
+                    <CheckBox
+                        android:id="@+id/cb_zhy_ts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"
+                        android:layout_alignBaseline="@+id/textView18"
+                        android:layout_alignBottom="@+id/textView18"
+                        android:layout_alignParentStart="true" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/rl_jisupaidan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_toRightOf="@+id/rl_all"
+                    >
+                    <CheckBox
+                        android:id="@+id/cb_juli_ts"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="极速派单"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+                        android:layout_toRightOf="@+id/cb_juli_ts"/>
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/tv_fanwei"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/rl_all"
+                    android:layout_height="60dp"
+                    android:text="1、接单范围："
+                    android:textSize="14dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+                <RelativeLayout
+                    android:id="@+id/rl_quanguo"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/rl_all"
+                    android:layout_height="60dp"
+                    android:layout_toRightOf="@+id/tv_fanwei">
+                    <CheckBox
+                        android:id="@+id/cb_quanguo"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"/>
+
+                    <TextView
+                        android:layout_toRightOf="@+id/cb_quanguo"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="不限"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_juli"
+                    android:layout_marginLeft="15dp"
+                    android:layout_below="@+id/rl_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_toRightOf="@+id/rl_quanguo">
+                    <CheckBox
+                        android:id="@+id/cb_juli"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"/>
+                    <EditText
+                        android:layout_toRightOf="@+id/cb_juli"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/et_juli"
+                        android:layout_width="50dp"
+                        android:hint=""
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:textColor="#000"
+                        android:textSize="13dp"
+                        android:text=""
+                        android:background="@null"/>
+                    <TextView
+                        android:layout_toRightOf="@+id/cb_juli"
+                        android:layout_width="50dp"
+                        android:layout_height="0.1dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/black"
+                        android:layout_below="@+id/et_juli"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="km 内"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:layout_toRightOf="@+id/et_juli"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_xianshi"
+                    android:layout_below="@+id/tv_fanwei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:text="2、专业匹配："
+                    android:textSize="14dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+                <RelativeLayout
+                    android:id="@+id/rl_buxian"
+                    android:layout_below="@+id/tv_fanwei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_alignLeft="@+id/rl_quanguo"
+                    android:layout_centerVertical="true">
+                    <CheckBox
+                        android:id="@+id/cb_buxian_xs"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="广泛"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:layout_toRightOf="@+id/cb_buxian_xs"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_zhuanye_bh"
+                    android:layout_below="@+id/tv_fanwei"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_toRightOf="@+id/rl_buxian">
+                    <CheckBox
+                        android:id="@+id/cb_zhy_bh"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"/>
+
+                    <TextView
+                        android:layout_toRightOf="@+id/cb_zhy_bh"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="包含"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_zhuanye_xs"
+                    android:layout_below="@+id/tv_fanwei"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_toRightOf="@+id/rl_zhuanye_bh">
+                    <CheckBox
+                        android:id="@+id/cb_zhy_xs"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"/>
+
+                    <TextView
+                        android:layout_toRightOf="@+id/cb_zhy_xs"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="精准"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_messageorder"
+                    android:layout_below="@+id/tv_xianshi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:text="3、短信派单："
+                    android:textSize="14dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+
+                <RelativeLayout
+                    android:id="@+id/messageorder_all"
+                    android:layout_below="@+id/tv_xianshi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_alignLeft="@+id/rl_quanguo"
+                    android:layout_centerVertical="true">
+                    <CheckBox
+                        android:id="@+id/cb_all"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="全部"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:layout_toRightOf="@+id/cb_all"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/messageorder_gc"
+                    android:layout_below="@+id/tv_xianshi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/rl_buxian">
+                    <CheckBox
+                        android:id="@+id/cb_gc"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"/>
+
+                    <TextView
+                        android:layout_toRightOf="@+id/cb_gc"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="工程"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/messageorder_gr"
+                    android:layout_below="@+id/tv_xianshi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/messageorder_gc">
+                    <CheckBox
+                        android:id="@+id/cb_gr"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"/>
+
+                    <TextView
+                        android:layout_toRightOf="@+id/cb_gr"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="个人"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_sendorderprice"
+                    android:layout_below="@+id/tv_messageorder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:text="4、派单出价："
+                    android:textSize="14dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+
+                <RelativeLayout
+                    android:id="@+id/sendorderprice"
+                    android:layout_below="@+id/tv_messageorder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_alignLeft="@+id/rl_quanguo"
+                    android:layout_centerVertical="true">
+                    <CheckBox
+                        android:id="@+id/cb_priceall"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="不限"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:layout_toRightOf="@+id/cb_priceall"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sendorderprice_set"
+                    android:layout_below="@+id/tv_messageorder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/rl_buxian">
+
+                    <CheckBox
+                        android:id="@+id/cb_sendorderprice"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"/>
+                    <TextView
+                        android:id="@+id/tv_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="1 - "
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+                        android:layout_toRightOf="@+id/cb_sendorderprice"/>
+
+                    <EditText
+                        android:layout_toRightOf="@+id/tv_start"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/et_sendorderprice"
+                        android:layout_width="50dp"
+                        android:hint=""
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:textColor="#000"
+                        android:textSize="13dp"
+                        android:text=""
+                        android:background="@null"/>
+                    <TextView
+                        android:layout_toRightOf="@+id/tv_start"
+                        android:layout_width="50dp"
+                        android:layout_height="0.1dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/black"
+                        android:layout_below="@+id/et_sendorderprice"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="元"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:layout_toRightOf="@+id/et_sendorderprice"/>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_businessHire"
+                    android:layout_below="@+id/tv_sendorderprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:text="5、业务聘请："
+                    android:textSize="14dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+
+                <RelativeLayout
+                    android:id="@+id/businessHire_first"
+                    android:layout_below="@+id/tv_sendorderprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_alignLeft="@+id/rl_quanguo"
+                    android:layout_centerVertical="true">
+                    <CheckBox
+                        android:id="@+id/cb_first"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="不用"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:layout_toRightOf="@+id/cb_first"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/businessHire_second"
+                    android:layout_below="@+id/tv_sendorderprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/rl_buxian">
+                    <CheckBox
+                        android:id="@+id/cb_second"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"/>
+
+                    <TextView
+                        android:layout_toRightOf="@+id/cb_second"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="初级"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/businessHire_thrid"
+                    android:layout_below="@+id/tv_sendorderprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/messageorder_gc">
+                    <CheckBox
+                        android:id="@+id/cb_thrid"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"/>
+
+                    <TextView
+                        android:layout_toRightOf="@+id/cb_thrid"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="高级"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_trainlearn"
+                    android:layout_below="@+id/tv_businessHire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:text="6、培训学习："
+                    android:textSize="14dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"/>
+
+                <RelativeLayout
+                    android:id="@+id/trainlearn_first"
+                    android:layout_below="@+id/tv_businessHire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_alignLeft="@+id/rl_quanguo"
+                    android:layout_centerVertical="true">
+                    <CheckBox
+                        android:id="@+id/cb_trainlearn_first"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="不接收"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:layout_toRightOf="@+id/cb_trainlearn_first"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/trainlearn_second"
+                    android:layout_below="@+id/tv_businessHire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/rl_buxian">
+                    <CheckBox
+                        android:id="@+id/cb_trainlearn_second"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"/>
+
+                    <TextView
+                        android:layout_toRightOf="@+id/cb_trainlearn_second"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="成交率"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/trainlearn_thrid"
+                    android:layout_below="@+id/tv_businessHire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/messageorder_gc">
+                    <CheckBox
+                        android:id="@+id/cb_trainlearn_thrid"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"/>
+
+                    <TextView
+                        android:layout_toRightOf="@+id/cb_trainlearn_thrid"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="数据应用"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_queren"
+                    android:layout_below="@+id/tv_trainlearn"
+                    android:visibility="visible"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/fx_bg_btn_green"
+                    android:textSize="14dp"
+                    android:textColor="#fff"
+                    android:text="保存设置" />
+
+                <Button
+
+                    android:id="@+id/btn_messageOrder"
+                    android:textSize="14dp"
+                    android:textColor="#fff"
+                    android:text="短信派单"
+                    android:background="@drawable/fx_bg_btn_green"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_below="@+id/btn_queren"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp" />
+
+                <LinearLayout
+                    android:layout_below="@+id/btn_messageOrder"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="一、账号等级:"
+                        android:textSize="13dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/light_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="很多平台都会对初期较早的账号给予更高权重，用户认定喜欢的平台，会通过分享推荐推动发展，平台对这样忠诚度较高的账号也会给予各种优先回报"
+                        android:textSize="13dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/light_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="二、主动接单:"
+                        android:textSize="13dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/light_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="主动查看客户的派单动态，及时联系客户沟通报价并接单的叫主动接单"
+                        android:textSize="13dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/light_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="三、被动接单1:"
+                        android:textSize="13dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/light_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="客户通过搜索查找主动联系咨询，叫被动接单，通过加入知名并且口碑较好的企业提高被动接单几率，个人目标太小，企业维护口碑，投放广告，就是为此"
+                        android:textSize="13dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/light_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="四、被动接单2:"
+                        android:textSize="13dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/light_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="通过个人中心简介和4个专业的编辑只有超过500字以上的内容才有可能提高被搜索到的几率"
+                        android:textSize="13dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/light_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="五、相互介绍:"
+                        android:textSize="13dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/light_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="把不是自己专业的派单及时分享介绍给认识的朋友，能够更有效的把握没有及时发现的派单，同时还能提高个人账号指数"
+                        android:textSize="13dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/light_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="六、提高信誉:"
+                        android:textSize="13dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/light_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="质保已经是很多平台客户认可的一种保障模式，根据个人专业价值合理展示质保才能获取客户信任，一般质保展示至少要大于单笔最大接单金额，否则将会引起客户反感"
+                        android:textSize="13dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/light_grey"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <include layout="@layout/table_layout"
+                android:layout_below="@+id/rl_fanwei"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

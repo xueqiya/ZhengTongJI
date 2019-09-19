@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#f7f7f7" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fx_top_bar_back" />
+
+        <TextView
+            android:id="@+id/tvback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@id/iv_back"
+            android:text="企业设置"
+            android:textColor="@color/gray"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="编辑要求"
+            android:textColor="#000"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btn_queren"
+            android:visibility="invisible"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/fx_bg_btn_green"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="14dp"
+            android:textColor="#fff"
+            android:text="完成"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/llImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fff">
+        <RelativeLayout
+            android:id="@+id/re_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/fx_btn_list_item_bg">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_below="@+id/tv_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:overScrollMode="never" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="150dp"
+                android:gravity="left|top"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/login_input"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#fff">
+
+            <CheckBox
+                android:id="@+id/cb_shoufeijiaru"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_toRightOf="@+id/cb_shoufeijiaru"
+                android:layout_marginLeft="10dp"
+                android:text="1、付费加入企业每人"
+                android:layout_centerVertical="true"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_jiarujine"
+                android:layout_toRightOf="@+id/tv1"
+                android:layout_centerVertical="true"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="#000"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:background="@drawable/login_input"/>
+            <TextView
+                android:text="元"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/et_jiarujine"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_commit"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textSize="16dp"
+            android:textColor="#fff"
+            android:text="确认提交"
+            android:background="@drawable/fx_bg_btn_green"/>
+    </LinearLayout>
+</LinearLayout>

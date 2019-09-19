@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#fff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp">
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_marginTop="10dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/app_logo"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv1"
+                android:text="正事多"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="#000"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_toRightOf="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <RelativeLayout
+                android:id="@+id/rl2"
+                android:layout_width="180dp"
+                android:background="#fff"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="正事多-我的线上运营平台"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/accents_blue"
+                    android:textSize="15dp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/tv_title"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/first_logo"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/qq"
+                            android:layout_marginTop="12dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp" />
+
+                        <TextView
+                            android:id="@+id/tv_qqcount"
+                            android:textColor="@color/orange"
+                            android:text="1.3万次"
+                            android:textSize="11dp"
+                            android:layout_marginTop="10dp"
+                            android:textAlignment="center"
+                            android:layout_below="@id/first_logo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/second_logo"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/weixin"
+                            android:layout_marginTop="12dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp" />
+
+                        <TextView
+                            android:id="@+id/tv_weixincount"
+                            android:textColor="@color/orange"
+                            android:text="1.6万次"
+                            android:textSize="11dp"
+                            android:layout_marginTop="10dp"
+                            android:textAlignment="center"
+                            android:layout_below="@id/second_logo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/thrid_logo"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/sina_weibo"
+                            android:layout_marginTop="12dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp" />
+
+                        <TextView
+                            android:id="@+id/tv_weibocount"
+                            android:textColor="@color/orange"
+                            android:text="1.1万次"
+                            android:textSize="11dp"
+                            android:layout_marginTop="10dp"
+                            android:textAlignment="center"
+                            android:layout_below="@id/thrid_logo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl3"
+                android:layout_toRightOf="@+id/rl2"
+                android:layout_width="60dp"
+                android:layout_height="100dp">
+                <ImageView
+                    android:id="@+id/iv2"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/zhengshi_erweima"/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv2"
+                    android:text="长按识别"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:textColor="#000"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

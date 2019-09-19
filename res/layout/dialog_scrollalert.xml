@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@color/color_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="13dp"
+        android:text=" 马女士预出价300元找维修家具"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" />
+
+    <ImageView
+        android:src="@drawable/delet_zhaopian_1x"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#f7f7f7">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fx_top_bar_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="关于我们"
+            android:textColor="@color/gray"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_back"
+            android:text="个人中心"
+            android:textColor="@color/gray"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#000" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/gra"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/app_logo"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/gray"
+            android:text="正事多 4.5"
+            android:id="@+id/textView17" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_about_zhshi"
+        android:text="关于正事多"
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:clickable="true"
+        android:layout_marginLeft="15dp"
+        android:gravity="center|left"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#000" />
+    <TextView
+        android:id="@+id/tv_pingfen"
+        android:text="去评分"
+        android:textSize="18dp"
+        android:clickable="true"
+        android:textColor="#000"
+        android:layout_marginLeft="15dp"
+        android:gravity="center|left"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#000" />
+    <TextView
+        android:id="@+id/tv_helpto_use"
+        android:text="使用帮助"
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:clickable="true"
+        android:layout_marginLeft="15dp"
+        android:gravity="center|left"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#000" />
+
+    <TextView
+        android:id="@+id/tv_jieshao"
+        android:text="功能介绍"
+        android:textSize="18dp"
+        android:textColor="#000"
+
+        android:layout_marginLeft="15dp"
+        android:gravity="center|left"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#000" />
+    <TextView
+        android:id="@+id/tv_kaifang"
+        android:text="开放合作"
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:layout_marginLeft="15dp"
+        android:gravity="center|left"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#000" />
+</LinearLayout>

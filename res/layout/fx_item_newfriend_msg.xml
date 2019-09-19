@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/tv_titl"
+            android:visibility="invisible"
+            android:background="@drawable/fx_bg_text_gra"
+            android:text="张三封"
+            android:singleLine="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="14dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:visibility="visible"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/fx_default_useravatar" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:text="李辉"
+            android:layout_toRightOf="@id/iv_avatar"
+            android:textColor="#353535"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/iv_avatar"
+            android:paddingTop="6dp"
+            android:text="请求加你为好友"
+            android:textColor="#aaaaaa"
+            android:textSize="14dp" />
+        <TextView
+            android:id="@+id/tv_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-12-30 08:30"
+            android:textColor="#aaaaaa"
+            android:textSize="14dp"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:layout_below="@+id/tv_reason"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="12dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_added"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dp"
+                android:text="已添加"
+                android:textColor="#AAAAAA"
+                android:textSize="12dp" />
+            <Button
+                android:id="@+id/btn_cancle"
+                android:layout_width="48dp"
+                android:layout_height="32dp"
+                android:background="@drawable/fx_bg_btn_green"
+                android:text="拒绝"
+                android:layout_marginRight="5dp"
+                android:textColor="#fff"
+                android:textSize="12dp" />
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="48dp"
+                android:layout_height="32dp"
+                android:background="@drawable/fx_bg_btn_green"
+                android:text="同意"
+                android:textColor="#fff"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

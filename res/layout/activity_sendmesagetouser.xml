@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:visibility="visible"
+        android:background="#f7f7f7">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fx_top_bar_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="发送短信"
+            android:textColor="@color/gray"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_back"
+            android:text="返回"
+            android:textColor="@color/gray"
+            android:textSize="18dp" />
+
+
+        <TextView
+            android:id="@+id/tv_rightSetRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:text="设置红包"
+            android:textColor="@color/blue"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout
+            android:background="#fff"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/tv_titlemescount"
+                    android:text="短信扣费条数（默认1）："
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_messageCount"
+                    android:layout_toRightOf="@+id/tv_titlemescount"
+                    android:inputType="number"
+                    android:textSize="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_fromLabel"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:text="来源："
+                android:textColor="@color/red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_taskLabel"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="标签："
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/tv_titlemescount2"
+                    android:text="短信内容标签："
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/et_newTask"
+                    android:layout_toRightOf="@+id/tv_titlemescount2"
+                    android:textSize="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_duanxintitle"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:text="是否给师傅发送短信"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.fanxin.easeui.widget.EaseSwitchButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/switch_allpeople"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/tv_duanxintitle"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+
+
+
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="内容："
+                android:textColor="@color/black"
+                android:maxLines="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_messageContent1"
+                android:layout_marginTop="5dp"
+                android:textSize="12dp"
+                android:gravity="top"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_count1"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/red"
+                    android:text="一共55个字"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/black"
+                    android:text="有短信派单的短信内容"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/et_messageContent2"
+                android:layout_marginTop="5dp"
+                android:textSize="12dp"
+                android:gravity="top"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_count2"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/red"
+                    android:text="一共55个字"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/midBtn"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/white"
+                    android:text="给师傅发送短信"
+                    android:gravity="center"
+                    android:background="@drawable/btn_corner_blue7"
+                    android:layout_width="150dp"
+                    android:layout_height="35dp" />
+
+            </RelativeLayout>
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+            
+        </LinearLayout>
+        
+    </ScrollView>
+
+    
+
+</LinearLayout>

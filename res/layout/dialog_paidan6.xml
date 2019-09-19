@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null">
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:background="@drawable/fx_bg_btn_white">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="温馨提示:"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="没有找到合适接单人您可以选择再派一次或者发布详细需求"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="#000" />
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_below="@+id/title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/black"/>
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/btn_cancel"
+            android:layout_below="@+id/tv2"
+            android:background="@null"
+            android:text="删除派单"
+            android:textColor="@color/accent_blue"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_below="@+id/title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/black"/>
+        <Button
+            android:id="@+id/btn_send_detail_paidan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/btn_cancel"
+            android:layout_below="@+id/tv2"
+            android:background="@null"
+            android:text="发送详细派单"
+            android:textColor="@color/accent_blue"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_below="@+id/title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/black"/>
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/btn_cancel"
+            android:layout_below="@+id/tv2"
+            android:background="@null"
+            android:text="取  消"
+            android:textColor="@color/accent_blue"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RadioButton
+            android:id="@+id/btn_region"
+            android:button="@null"
+            android:text="地区数据"
+            android:background="#fff"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <View
+            android:id="@+id/v2"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:background="@color/crop__selector_focused"/>
+
+        <RadioButton
+            android:id="@+id/btn_profession"
+            android:button="@null"
+            android:text="专业数据"
+            android:gravity="center"
+            android:textColor="@color/light_grey"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <View
+        android:visibility="gone"
+        android:background="@color/light_grey"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:textAlignment="center"
+                android:layout_marginTop="13dp"
+                android:text="下单量"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_leftorder"
+                android:textAlignment="center"
+                android:text="20910"
+                android:layout_marginTop="2dp"
+                android:textColor="#1E90FF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_allorder"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_bigdatastroke_blue"
+                android:textAlignment="center"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:text="单量\n54784"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:textAlignment="center"
+                android:layout_marginTop="13dp"
+                android:text="订单量"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_rightorder"
+                android:textAlignment="center"
+                android:text="28076"
+                android:layout_marginTop="2dp"
+                android:textColor="#1E90FF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_order11"
+                android:gravity="center"
+                android:text="搜索下单 62%"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:textColor="@color/green"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:text="↓"
+                android:layout_toRightOf="@+id/tv_order11"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_below="@+id/tv_order11"
+                android:id="@+id/tv_order12"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:text="指定下单 12%"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:textColor="@color/red"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:layout_marginTop="47dp"
+                android:text="↑"
+                android:layout_toRightOf="@+id/tv_order12"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_height="20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_order13"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:text="筛选下单 21%"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:textColor="@color/green"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:text="↓"
+                android:layout_toRightOf="@+id/tv_order13"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_below="@+id/tv_order13"
+                android:id="@+id/tv_order14"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:text="被动派单 5%"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:textColor="@color/red"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:layout_marginTop="47dp"
+                android:text="↑"
+                android:layout_toRightOf="@+id/tv_order14"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_height="20dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_bigData"
+                android:textColor="@color/dark_red"
+                android:gravity="center"
+                android:text="数据"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+
+
+        <View
+            android:visibility="visible"
+            android:background="@color/light_grey"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"/>
+
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_lifeDynamic"
+                android:textColor="@color/light_grey"
+                android:gravity="center"
+                android:text="案例"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/unread_number_shhuo"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:background="@drawable/fx_bg_text_darkred"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+
+
+
+        <View
+            android:visibility="visible"
+            android:background="@color/light_grey"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"/>
+
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_locationDynamic"
+                android:textColor="@color/light_grey"
+                android:gravity="center"
+                android:text="坐标"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+            <TextView
+                android:id="@+id/unread_number_zuobiao"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:background="@drawable/fx_bg_text_darkred"
+                android:layout_alignParentRight="true"/>
+
+
+            <ImageView
+                android:id="@+id/iv_unread_zuobiao"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="5dp"
+                android:visibility="invisible"
+                android:src="@drawable/baoxiang_sm_close"/>
+
+
+        </RelativeLayout>
+
+
+
+        <View
+            android:visibility="visible"
+            android:background="@color/light_grey"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_proDynamic"
+                android:textColor="@color/light_grey"
+                android:gravity="center"
+                android:text="商业"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/unread_number_shangye"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:background="@drawable/fx_bg_text_darkred"
+                android:layout_alignParentRight="true"/>
+
+            <ImageView
+                android:id="@+id/iv_unread_shangye"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="5dp"
+                android:visibility="invisible"
+                android:scaleType="fitCenter"
+                android:src="@drawable/red_packeg"/>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:visibility="visible"
+        android:background="@color/light_grey"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+    <ListView
+        android:visibility="gone"
+        android:id="@+id/data_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/xl_recyclerView"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ScrollView
+        android:id="@+id/image_bigData"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+
+                android:visibility="visible"
+                android:src="@drawable/bigdatainfo"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:visibility="visible"
+                android:src="@drawable/bigdatainfo2"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:text="接单所在区域，与派单密度有关\n不同的区域，派单类型和量不同"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                android:src="@drawable/bigdatainfo3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:text="派单  案例故事"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:text="派单  案例故事1"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <com.sangu.apptongji.widget.CircleImageView
+                    android:id="@+id/sdv_image"
+                    android:src="@drawable/popimage1"
+                    android:layout_centerVertical="true"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+                <TextView
+                    android:layout_toRightOf="@+id/sdv_image"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14dp"
+                    android:text="王先生： 专业建筑装修工程      21：00"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/light_grey"
+                android:lineSpacingMultiplier="1.2"
+                android:text="晚上9:00：回家发现钥匙丢了，通过网上搜索开锁的电话，打了好几通电话，不是太远，就是下班不接活了，一个要等1小时，而且要价300元，要不就不来.....
+\n【正事多】发派单后：     10秒派单
+\n因为用【正事多】接过单，就试着通过正事多发个“开锁”的派单试试，结果2分钟不到本小区一个开锁的直接就来了，5秒开锁，按着市场价给他100块，他只收了30元，说都是邻居顺手的事儿，不好意思多收。"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+            <TextView
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:text="派单  案例故事2"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <com.sangu.apptongji.widget.CircleImageView
+                    android:id="@+id/sdv_image1"
+                    android:src="@drawable/popimage2"
+                    android:layout_centerVertical="true"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+                <TextView
+                    android:layout_toRightOf="@+id/sdv_image1"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14dp"
+                    android:text="赵女士：专业 平面设计师      11:00"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/light_grey"
+                android:lineSpacingMultiplier="1.2"
+                android:text="上午11：00左右，和客户约好去农家院吃饭，半路车胎被扎破，备胎在后备箱，拿不动也不会换，路上人又少，着急就在各种网上搜索各种救援、修理厂等，打电话咨询，十几个电话后，最快的也要1个多小时才能来，而且起步200元，现在哪怕是给800能快点来就行啊，这次和客户的合同有十几万，要是赶不上，客户走了，那损失就大了....
+\n【正事多】发派单后：     30分钟派单
+\n各种搜索咨询都不行后，连朋友圈都试了，关键是时间太急啊，这个时候附近河边上来一个人拿着鱼竿走过来，问是不是我需要换胎，我正好奇呢，他说是（李云）在【正事多】发派单，（朋友在朋友圈看到我遇到麻烦直接帮我发的单）说这个坐标需要帮忙，正好他就在这个坐标附近，就顺手帮一下....后来了解到，他是开超市的，平时用【正事多】接些附近小区用户需要送货的单子，今天出来钓鱼，看见附近有需求所以帮个忙最后连钱都没有收，说是交个朋友，以后店里需要设计请我帮忙...
+"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:text="派单  案例故事3"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <com.sangu.apptongji.widget.CircleImageView
+                    android:id="@+id/sdv_image2"
+                    android:src="@drawable/popimage3"
+                    android:layout_centerVertical="true"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+                <TextView
+                    android:layout_toRightOf="@+id/sdv_image2"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14dp"
+                    android:text="黄女士： 家居网店"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/light_grey"
+                android:lineSpacingMultiplier="1.2"
+                android:text="通过网上销售家具、定制衣柜、鞋柜、电视柜、窗帘等，网上销售很快，也很广，全国都有，小件的我们就配上视频加上一些工具发给客户自己安装，但是大件就需要帮客户找人安装，因为用户自己根本不知道怎么找人，甚至都不知道找什么样的技工，产品要想销售，就需要解决客户的售后安装问题，要不然就算货发到了，客户闲麻烦，就会退货，损失就大了，之前通过一些群、和网上搜索，找各地区的安装工，维修工，虽然麻烦，但是也算能支撑起网上的销售，但是问题也不少......
+\n问题1：不好找人，有的平台工种太单一，有些技工不好找，售后不及时
+\n问题2：各种群里面中介泛滥，安装一个鞋柜80块，转来转去，价格提到120块，工人干活只拿到30块，成本高
+\n问题3；线上线下结算不清晰，有时候一个单子，好几拨人都要结账，重复结账，最后客户还说活没干。
+\n问题4：售后部门的人，和各地区师傅或中介私下串通一气，通过虚报安装费，维修费，售后费用，将售后资金套出，造成损失。
+\n问题5：后期售后责任难追踪，有的师傅用纸片签字，有的用验证码确认客户签字，出现售后问题根本不好找人。
+\n使用【正事多】派单后： 不仅解决了售后还能增曝光
+\n第一点接单不抽成，100元的安装单子，工人到手100元，工人接单积极性高。
+\n第二通过坐标向附近派单，中介根本插不上手，离得越近服务越及时，价格越便宜。
+\n第三选择性比较大，可以发派单，也可以将拖动坐标自己选附近的人，工种全面基本包含了360行的人。
+\n第四有商业模块可以发我们的产品，关键是可以直接发店铺的链接，连编辑都省了，够开放
+\n第五一些地区还可以选择企业服务，还能开发票
+\n第六最关心的就是，管理方便，自带的订单记录管理系统，谁干的活，客户签字情况（原笔迹的）结算情况都可以很好的记录，极大节省了售后成本和管理效率
+"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:text="接单  案例故事"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:text="接单  案例故事1"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <com.sangu.apptongji.widget.CircleImageView
+                    android:id="@+id/sdv_image3"
+                    android:src="@drawable/popimage4"
+                    android:layout_centerVertical="true"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+                <TextView
+                    android:layout_toRightOf="@+id/sdv_image3"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14dp"
+                    android:text="胡先生：专业 古家具修复技师     坐标：东阳"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/light_grey"
+                android:lineSpacingMultiplier="1.2"
+                android:text="浏览派单动态时，发现一家具维修的派单，位置在北京朝阳区，图片是一张清朝时期的牙床，有开裂破损需要维修，于是就留言问一下是仿的家具还是真的古董家具，客户回复说是近百万的古董家具，由于对红木古董家具的工艺不太懂，只是认为修一下就好了，发完派单附近就有十几个报价，几百块钱而已，后来通过在线聊天，告诉他查一下资料，古家具修复，不同于普通家具维修，后来客户才知道没那么简单，后来与客户决定下单，要我帮他修复，约定在十一的时候，去北京玩，顺便帮他维修。"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:text="接单  案例故事2"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <com.sangu.apptongji.widget.CircleImageView
+                    android:id="@+id/sdv_image4"
+                    android:src="@drawable/popimage5"
+                    android:layout_centerVertical="true"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+                <TextView
+                    android:layout_toRightOf="@+id/sdv_image4"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="14dp"
+                    android:text="刘先生：专业 建筑装饰设计    坐标：荆州"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/light_grey"
+                android:lineSpacingMultiplier="1.2"
+                android:text="招标动态：需求装修，位置坐标：开封乡下，客户在郑州上班工作，经常旅游时见到不少景区建的的房子非常漂亮，因为老家有在基地，也想建一套类似的房子，因为没有相关知识，也不知道怎么搜索，该找什么样的公司或专业的人，就把旅游时拍的照片发出去了，想建图片类似的房子.....
+\n
+\n刘先生通过图片发现，客户发布的需求关键词，和实际需求可能无法匹配，普通做装修的这种活是接不了的，就与客户沟通原来客户是想要一种“徽式建筑”风格，而他坐标附近会这种专业的不多，所以一直没有找到合适的，通过一段时间沟通学习后客户最终成功下单...
+"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#f7f7f7" >
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:onClick="back"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fx_top_bar_back" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/iv_back"
+                android:text="返回"
+                android:textColor="@color/gray"
+                android:textSize="18dp" />
+
+            <TextView
+                android:text="筛选"
+                android:textSize="20dp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/title">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="性        别:"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignTop="@id/et_search"
+                    android:layout_alignLeft="@id/et_search"
+                    android:textSize="16dp"
+                    android:textColor="#000"/>
+
+                <RadioButton
+                    android:id="@+id/rb_xb_bx"
+                    android:layout_width="60dp"
+                    android:text="不  限"
+                    android:layout_gravity="center"
+                    android:background="@drawable/radiobutton_selected_orno"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/bg_light_grey"
+                    android:gravity="center"
+                    android:checked="true"
+                    android:textSize="15dp"
+                    android:button="@null"
+                    android:layout_height="25dp"/>
+
+                <RadioButton
+                    android:id="@+id/rb_xb_nan"
+                    android:layout_width="30dp"
+                    android:layout_gravity="center"
+                    android:text="男"
+                    android:background="@drawable/radiobutton_selected_orno"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/gray"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:button="@null"
+                    android:layout_height="25dp"/>
+                <RadioButton
+                    android:id="@+id/rb_xb_nv"
+                    android:layout_width="30dp"
+                    android:layout_gravity="center"
+                    android:text="女"
+                    android:background="@drawable/radiobutton_selected_orno"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/gray"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:button="@null"
+                    android:layout_height="25dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="专        业:"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignTop="@id/et_search"
+                    android:layout_alignLeft="@id/et_search"
+                    android:textSize="16dp"
+                    android:textColor="#000"/>
+
+                <RadioButton
+                    android:id="@+id/rb_zhy_bx"
+                    android:layout_width="60dp"
+                    android:text="不  限"
+                    android:layout_gravity="center"
+                    android:background="@drawable/radiobutton_selected_orno"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/bg_light_grey"
+                    android:gravity="center"
+                    android:checked="true"
+                    android:textSize="15dp"
+                    android:button="@null"
+                    android:layout_height="25dp"/>
+
+                <RadioButton
+                    android:id="@+id/rb_zhy_has"
+                    android:layout_width="80dp"
+                    android:layout_gravity="center"
+                    android:text="有专业的"
+                    android:background="@drawable/radiobutton_selected_orno"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/gray"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:button="@null"
+                    android:layout_height="25dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="企        业:"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignTop="@id/et_search"
+                    android:layout_alignLeft="@id/et_search"
+                    android:textSize="16dp"
+                    android:textColor="#000"/>
+
+                <RadioButton
+                    android:id="@+id/rb_qy_bx"
+                    android:layout_width="60dp"
+                    android:text="不  限"
+                    android:layout_gravity="center"
+                    android:background="@drawable/radiobutton_selected_orno"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/bg_light_grey"
+                    android:gravity="center"
+                    android:checked="true"
+                    android:textSize="15dp"
+                    android:button="@null"
+                    android:layout_height="25dp"/>
+
+                <RadioButton
+                    android:id="@+id/rb_qy_has"
+                    android:layout_width="80dp"
+                    android:layout_gravity="center"
+                    android:text="有企业的"
+                    android:background="@drawable/radiobutton_selected_orno"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/gray"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:button="@null"
+                    android:layout_height="25dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="质        保:"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignTop="@id/et_search"
+                    android:layout_alignLeft="@id/et_search"
+                    android:textSize="16dp"
+                    android:textColor="#000"/>
+
+                <RadioButton
+                    android:id="@+id/rb_bzj_bx"
+                    android:layout_width="60dp"
+                    android:text="不  限"
+                    android:layout_gravity="center"
+                    android:background="@drawable/radiobutton_selected_orno"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/bg_light_grey"
+                    android:gravity="center"
+                    android:checked="true"
+                    android:textSize="15dp"
+                    android:button="@null"
+                    android:layout_height="25dp"/>
+
+                <RadioButton
+                    android:id="@+id/rb_bzj_has"
+                    android:layout_width="80dp"
+                    android:layout_gravity="center"
+                    android:text="有质保的"
+                    android:background="@drawable/radiobutton_selected_orno"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/gray"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:button="@null"
+                    android:layout_height="25dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="补        贴:"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignTop="@id/et_search"
+                    android:layout_alignLeft="@id/et_search"
+                    android:textSize="16dp"
+                    android:textColor="#000"/>
+
+                <RadioButton
+                    android:id="@+id/rb_bt_bx"
+                    android:layout_width="60dp"
+                    android:text="不  限"
+                    android:layout_gravity="center"
+                    android:background="@drawable/radiobutton_selected_orno"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/bg_light_grey"
+                    android:gravity="center"
+                    android:checked="true"
+                    android:textSize="15dp"
+                    android:button="@null"
+                    android:layout_height="25dp"/>
+
+                <RadioButton
+                    android:id="@+id/rb_bt_has"
+                    android:layout_width="80dp"
+                    android:layout_gravity="center"
+                    android:text="有补贴的"
+                    android:background="@drawable/radiobutton_selected_orno"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/gray"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:button="@null"
+                    android:layout_height="25dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="经        验:"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignTop="@id/et_search"
+                    android:layout_alignLeft="@id/et_search"
+                    android:textSize="16dp"
+                    android:textColor="#000"/>
+
+                <RadioButton
+                    android:id="@+id/rb_jy_bx"
+                    android:layout_width="60dp"
+                    android:text="不  限"
+                    android:layout_gravity="center"
+                    android:background="@drawable/radiobutton_selected_orno"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/bg_light_grey"
+                    android:gravity="center"
+                    android:checked="true"
+                    android:textSize="15dp"
+                    android:button="@null"
+                    android:layout_height="25dp"/>
+
+                <RadioButton
+                    android:id="@+id/rb_jy_has"
+                    android:layout_width="80dp"
+                    android:layout_gravity="center"
+                    android:text="由高至低"
+                    android:background="@drawable/radiobutton_selected_orno"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/gray"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:button="@null"
+                    android:layout_height="25dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="接  单  量:"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignTop="@id/et_search"
+                    android:layout_alignLeft="@id/et_search"
+                    android:textSize="16dp"
+                    android:textColor="#000"/>
+
+                <RadioButton
+                    android:id="@+id/rb_jdl_bx"
+                    android:layout_width="60dp"
+                    android:text="不  限"
+                    android:layout_gravity="center"
+                    android:background="@drawable/radiobutton_selected_orno"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/bg_light_grey"
+                    android:gravity="center"
+                    android:checked="true"
+                    android:textSize="15dp"
+                    android:button="@null"
+                    android:layout_height="25dp"/>
+
+                <RadioButton
+                    android:id="@+id/rb_jdl_has"
+                    android:layout_width="80dp"
+                    android:layout_gravity="center"
+                    android:text="由高至低"
+                    android:background="@drawable/radiobutton_selected_orno"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/gray"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:button="@null"
+                    android:layout_height="25dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="红        包:"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignTop="@id/et_search"
+                    android:layout_alignLeft="@id/et_search"
+                    android:textSize="16dp"
+                    android:textColor="#000"/>
+
+                <RadioButton
+                    android:id="@+id/rb_hb_bx"
+                    android:layout_width="60dp"
+                    android:text="不  限"
+                    android:layout_gravity="center"
+                    android:background="@drawable/radiobutton_selected_orno"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/bg_light_grey"
+                    android:gravity="center"
+                    android:checked="true"
+                    android:textSize="15dp"
+                    android:button="@null"
+                    android:layout_height="25dp"/>
+
+                <RadioButton
+                    android:id="@+id/rb_hb_has"
+                    android:layout_width="80dp"
+                    android:layout_gravity="center"
+                    android:text="有红包的"
+                    android:background="@drawable/radiobutton_selected_orno"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/gray"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:button="@null"
+                    android:layout_height="25dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_et"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="年  龄  段:"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignTop="@id/et_search"
+                    android:layout_alignLeft="@id/et_search"
+                    android:textSize="16dp"
+                    android:textColor="#000"/>
+
+                <RadioButton
+                    android:id="@+id/rb_nl_bx"
+                    android:layout_width="60dp"
+                    android:text="不  限"
+                    android:layout_gravity="center"
+                    android:background="@drawable/radiobutton_selected_orno"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/bg_light_grey"
+                    android:gravity="center"
+                    android:checked="true"
+                    android:textSize="15dp"
+                    android:button="@null"
+                    android:layout_height="25dp"/>
+
+                <EditText
+                    android:id="@+id/et_start"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/fx_bg_et"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:text=""/>
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:text="至"/>
+                <EditText
+                    android:id="@+id/et_end"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/fx_bg_et"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:text=""/>
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_sousuo"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="确 定 搜 索"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:background="@drawable/fx_bg_btn_green"/>
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="清 空 搜 索"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:background="@drawable/fx_bg_btn_green"/>
+    </LinearLayout>
+</ScrollView>

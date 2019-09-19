@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null">
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:minHeight="150dp"
+        android:layout_centerInParent="true">
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="温馨提示"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_below="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#000000"/>
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_below="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="系统检测到有新版本，不更新可能会影响使用"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_below="@+id/title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#000000"/>
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv2"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:text="以后再说"
+            android:textColor="#3EC5FF"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_below="@+id/tv2"
+            android:layout_width="0.1dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="#000000"/>
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/btn_cancel"
+            android:layout_below="@+id/tv2"
+            android:background="@null"
+            android:text="现在更新"
+            android:textColor="#3EC5FF"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

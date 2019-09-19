@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fff">
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#f7f7f7" >
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:onClick="back"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fx_top_bar_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:text="售后验收反馈单"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btn_queren"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="14dp"
+                android:textColor="@color/accent_blue"
+                android:text="完成"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            android:text="请提出宝贵意见，为下次更好的服务而改善服务质量"/>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="店铺/品牌/个人:"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:id="@+id/textView6" />
+
+            <TextView
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="店铺/品牌/个人:"
+                android:layout_toRightOf="@+id/textView6"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:id="@+id/tv_dp_pp_gr" />
+            <EditText
+                android:id="@+id/et_dp_pp_gr"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:hint="请输入标题"
+                android:layout_toRightOf="@+id/textView6"
+                android:layout_height="30dp"
+                android:gravity="center|left"
+                android:textColor="#000"
+                android:textSize="17dp"
+                android:background="#fff"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:text="您对我的专业程度?"
+            android:layout_marginLeft="10dp"
+            android:textSize="17dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal" >
+            <CheckBox
+                android:id="@+id/cb_zy1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:text="一般"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+
+            <CheckBox
+                android:id="@+id/cb_zy2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:text="满意"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                />
+
+            <CheckBox
+                android:id="@+id/cb_zy3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:text="不满意"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:text="您对我的质量结果?"
+            android:layout_marginLeft="10dp"
+            android:textSize="17dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal" >
+            <CheckBox
+                android:id="@+id/cb_zhiliang1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:text="一般"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+
+            <CheckBox
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:text="满意"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:id="@+id/cb_zhiliang2" />
+
+            <CheckBox
+                android:id="@+id/cb_zhiliang3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:text="不满意"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+        <TextView
+            android:text="您对我的定价收费?"
+            android:layout_marginLeft="10dp"
+            android:textSize="17dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal" >
+            <CheckBox
+                android:id="@+id/cb_dingjia1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:text="一般"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:text="满意"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/cb_dingjia2"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:text="不满意"
+                android:id="@+id/cb_dingjia3"
+                android:textSize="20dp" />
+        </LinearLayout>
+        <TextView
+            android:text="您对本次消费体验?"
+            android:layout_marginLeft="10dp"
+            android:textSize="17dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal" >
+            <CheckBox
+                android:id="@+id/cb_xfty1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:text="一般"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:text="满意"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/cb_xfty2" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:text="不满意"
+                android:textSize="20dp"
+                android:id="@+id/cb_xfty3"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv11"
+                android:layout_marginLeft="10dp"
+                android:text="您对本次服务的打分:"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_dafen"
+                android:layout_marginLeft="10dp"
+                android:text="您对本次服:"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:layout_toRightOf="@+id/tv11"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_dafen"
+                android:background="#fff"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:inputType="number"
+                android:layout_marginBottom="2dp"
+                android:layout_toRightOf="@+id/tv11"
+                android:gravity="top"
+                android:textSize="16dp"
+                android:hint="请输入分数"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:text="建议或意见:"
+                android:id="@+id/textView7" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:visibility="invisible"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/textView7"
+                android:text="建议或"
+                android:id="@+id/tv_jianyi" />
+
+            <EditText
+                android:layout_marginLeft="8dp"
+                android:id="@+id/et_jianyi"
+                android:background="#fff"
+                android:gravity="top"
+                android:hint="请输入建议"
+                android:textSize="16dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toRightOf="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            >
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/iv_jiedan"
+                android:gravity="center"
+                android:clickable="true"
+                android:layout_width="180dp"
+                android:scaleType="fitCenter"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_jiedan"
+                android:layout_width="180dp"
+                android:text="负责人签名区"
+                android:gravity="center"
+                android:clickable="true"
+                android:textSize="18dp"
+                android:layout_height="match_parent">
+            </TextView>
+
+            <android.view.View
+                android:id="@+id/v7"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:background="#000"/>
+
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/iv_xiadan"
+                android:gravity="center"
+                android:clickable="true"
+                android:scaleType="fitCenter"
+                android:layout_alignParentRight="true"
+                android:layout_width="180dp"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tv_xiadan"
+                android:clickable="true"
+                android:text="用户签名区"
+                android:textSize="18dp"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+            </TextView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
