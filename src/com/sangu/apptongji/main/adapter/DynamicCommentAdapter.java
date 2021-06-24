@@ -170,6 +170,7 @@ public class DynamicCommentAdapter extends BaseAdapter {
         final JSONObject object = data.get(position);
         // setCommentTextClick(holder.tv_content,object);
         JSONObject userInfo = object.getJSONObject("userInfo");
+        if (userInfo == null) return convertView;
         com.alibaba.fastjson.JSONArray userProfession = userInfo.getJSONArray("userProfessions");
         String shareRed = userInfo.getString("shareRed");
         if (shareRed != null && !"".equals(shareRed) && Double.parseDouble(shareRed) > 0) {

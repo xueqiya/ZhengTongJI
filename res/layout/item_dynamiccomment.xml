@@ -42,7 +42,7 @@
             android:layout_alignTop="@+id/iv_head"
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/iv_head"
-            android:text="姓名姓名"
+            android:text=""
             android:textColor="@color/black"
             android:textSize="14dp" />
 
