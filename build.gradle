@@ -37,7 +37,7 @@ android {
         versionName "1.0.0"
         ndk {
             //选择要添加的对应cpu类型的.so库。
-            abiFilters 'armeabi', 'x86', 'armeabi-v7a', 'armeabi'
+            abiFilters 'armeabi'
         }
     }
 
@@ -52,25 +52,11 @@ android {
             assets.srcDirs = ['assets']
             jniLibs.srcDirs = ['libs']
         }
-
-        androidTest.setRoot('tests')
-        debug.setRoot('build-types/debug')
-        release.setRoot('build-types/release')
     }
 
     lintOptions {
-
         checkReleaseBuilds false
         abortOnError false
-    }
-
-    signingConfigs {
-        release {
-            storeFile file("sanguqianming.jks")
-            storePassword "1034278918"
-            keyAlias "key"
-            keyPassword "62536851"
-        }
     }
 
     compileOptions {
@@ -78,8 +64,22 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+    signingConfigs {
+        release {
+            storeFile file('sanguqianming.jks')
+            storePassword "1034278918"
+            keyAlias "key"
+            keyPassword "62536851"
+        }
+    }
+
     buildTypes {
         release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.release
