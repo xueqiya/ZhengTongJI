@@ -4029,7 +4029,13 @@ public class SocialMainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
             final String createTime = json.getString("createTime");
             // String token = json.getString("token");
             final String rel_time = json.getString("createTime");
-            final String floorPrice = json.getString("floorPrice");
+            String floorPrice;
+            try {
+                floorPrice = json.getString("floorPrice");
+                Double.parseDouble(floorPrice);
+            }catch (Exception e){
+                floorPrice="0.0";
+            }
             String avatar = TextUtils.isEmpty(json.getString("uImage")) ? "" : json.getString("uImage");
             final String dynamicSeq = json.getString("dynamicSeq");
             String sex = TextUtils.isEmpty(json.getString("uSex")) ? "01" : json.getString("uSex");
@@ -5276,6 +5282,7 @@ public class SocialMainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
                 }
             }
             final View finalV = v2;
+            String finalFloorPrice = floorPrice;
             ((ViewHolderFive) holder).rl_zhuanfa.setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -5289,7 +5296,7 @@ public class SocialMainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
                     paidanZhuanfa = dynamicSeq;
                     updateLiulancishu(rel_time, dynamicSeq);
                     String oncePrice = json.getString("oncePrice");
-                    showZhfDialog(json.getString("views"), rel_time, null, ((ViewHolderFive) holder).card, finalV, oncePrice, dynamicSeq, sID, fromUId, finalFirstImage, userID, content, false, floorPrice + "|" + task_position);
+                    showZhfDialog(json.getString("views"), rel_time, null, ((ViewHolderFive) holder).card, finalV, oncePrice, dynamicSeq, sID, fromUId, finalFirstImage, userID, content, false, finalFloorPrice + "|" + task_position);
                 }
             });
             ((ViewHolderFive) holder).tv_content.setText(content);
