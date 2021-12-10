@@ -66,9 +66,9 @@ android {
     signingConfigs {
         release {
             storeFile file('sanguqianming.jks')
-            storePassword "1034278918"
+            storePassword "sangu333"
             keyAlias "key"
-            keyPassword "62536851"
+            keyPassword "sangu333"
         }
     }
 
